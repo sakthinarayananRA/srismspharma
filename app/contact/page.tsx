@@ -8,7 +8,7 @@ export default function Contact() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <div className="min-h-screen flex flex-col font-sans">
+      <div className="max-w-screen overflow-x-hidden flex flex-col font-sans">
         <nav className="hidden md:flex relative z-0 items-center px-10 py-6 bg-white">
           <div className="flex justify-start absolute left-0 top-0 z-10">
             <Image
@@ -90,15 +90,17 @@ export default function Contact() {
               <div className="space-y-2">
                 <div className="flex items-center text-gray-800 font-bold font-sans">
                   <FaPhoneAlt className="mr-2 text-[#23A6F0]" />
-                  8300602363
+                  +91 8300602363
                 </div>
                 <div className="flex items-center text-gray-700 font-sans">
                   <FaEnvelope className="mr-2 text-[#23A6F0]" />
                   srismspharma2020@gmail.com
                 </div>
-                <div className="flex items-center text-gray-700 font-sans">
-                  <FaMapMarkerAlt className="mr-2 text-[#23A6F0]" />
-                  16-A, Ananda Nagar, P.N.Pudur(P.O),Coimbatore-641041
+                <div className="flex  text-gray-700 font-sans">
+                  <FaMapMarkerAlt className="mr-2 mt-[2px] text-[#23A6F0]" />
+                  16-A, Ananda Nagar,<br/>
+                   P.N.Pudur(P.O),<br/>
+                   Coimbatore-641041<br/>
                 </div>
               </div>
             </section>
