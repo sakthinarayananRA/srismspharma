@@ -278,7 +278,7 @@ export default function Product() {
                     <div className="flex items-center justify-center w-full" >
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
-                          src="/images/eyeDropImages/Moispro/Moispro-4.JPG"
+                          src="/images/eyeDropImages/Moispro/moispro-4.JPG"
                           alt="Moispro Eyedrops"
                           fill
                           style={{ objectFit: 'contain' }}
@@ -381,7 +381,7 @@ export default function Product() {
                   <div className="flex items-center justify-center w-full" >
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
-                        src="/images/eyeDropImages/Moispro/Moispro-4.JPG"
+                        src="/images/eyeDropImages/Moispro/moispro-4.JPG"
                         alt="Moispro Eyedrops"
                         fill
                         style={{ objectFit: 'contain' }}
@@ -1088,7 +1088,7 @@ export default function Product() {
                   <div className="flex items-center justify-center w-full" >
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
-                        src="/images/eyeDropImages/nepain_PF/nepainPF-1.JPG"
+                        src="/images/eyeDropImages/nepain_PF/NepainPF-1.JPG"
                         alt="Nepain-PF Eyedrops"
                         fill
                         style={{ objectFit: 'contain' }}
@@ -1101,7 +1101,7 @@ export default function Product() {
                   <div className="flex items-center justify-center w-full" >
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
-                        src="/images/eyeDropImages/nepain_PF/nepainPF-2.JPG"
+                        src="/images/eyeDropImages/nepain_PF/NepainPF-2.JPG"
                         alt="Nepain-PF Eyedrops"
                         fill
                         style={{ objectFit: 'contain' }}
@@ -1114,7 +1114,7 @@ export default function Product() {
                   <div className="flex items-center justify-center w-full" >
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
-                        src="/images/eyeDropImages/nepain_PF/nepainPF-3.jpg"
+                        src="/images/eyeDropImages/nepain_PF/NepainPF-3.jpg"
                         alt="Nepain-PF Eyedrops"
                         fill
                         style={{ objectFit: 'contain' }}
