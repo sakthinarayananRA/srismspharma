@@ -73,22 +73,26 @@ export default function Product() {
 
         {/* Overlay Menu */}
         {isOpen && (
-          <div className="md:hidden fixed inset-0 z-40 bg-white px-6 py-6 flex flex-col gap-6">
-            {/* Close Button */}
-            <button onClick={() => setIsOpen(false)} className="absolute top-8 right-10">
-              <div className="w-6 h-6 relative">
-                <span className="absolute w-6 h-0.5 bg-black rotate-45 origin-center" />
-                <span className="absolute w-6 h-0.5 bg-black -rotate-45 origin-center" />
-              </div>
-            </button>
+          <>
+            <div className="md:hidden fixed h-60 ml-7 inset-0 z-40 bg-white px-6 py-6 flex flex-col gap-6">
+              {/* Close Button */}
+              <button onClick={() => setIsOpen(false)} className="absolute top-8 right-10">
+                <div className="w-6 h-6 relative">
+                  <span className="absolute w-6 h-0.5 bg-black rotate-45 origin-center" />
+                  <span className="absolute w-6 h-0.5 bg-black -rotate-45 origin-center" />
+                </div>
+              </button>
 
-            {/* Menu Items */}
-            <div className="mt-10 flex flex-col gap-4">
-              <Link href="/" className="text-[#23A6F0] font-semibold">Home</Link>
-              <Link href="/product" className="text-gray-600 hover:text-[#23A6F0] font-semibold">Product</Link>
-              <Link href="/contact" className="text-gray-600 hover:text-[#23A6F0] font-semibold">Contact</Link>
+              {/* Menu Items */}
+              <div className="mt-10 flex flex-col gap-4">
+                <Link href="/" className="text-gray-600 hover:text-[#23A6F0] font-semibold">Home</Link>
+                <Link href="/product" className=" text-[#23A6F0] font-semibold">Product</Link>
+                <Link href="/contact" className="text-gray-600 hover:text-[#23A6F0] font-semibold">Contact</Link>
+              </div>
             </div>
-          </div>
+            <div className="md:hidden bg-black opacity-30 h-[100vh] w-[100vh] z-39 fixed top-0">
+            </div>
+          </>
         )}
 
         {/* first */}
@@ -119,10 +123,10 @@ export default function Product() {
                     <div className="flex items-center justify-center w-full" >
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
-                          src="/images/product1.png"
-                          alt="Thumbnail"
-                          fill
+                          alt=""
+                          src="/images/eyeDropImages/Hyalomist_0.1/Hyalomist_0.1_1.JPG"
                           style={{ objectFit: 'contain' }}
+                          fill
                           priority
                         />
                       </div>
@@ -133,9 +137,35 @@ export default function Product() {
                     <div className="flex items-center justify-center w-full" >
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
-                          src="/images/product1.png"
-                          alt="Thumbnail"
                           fill
+                          src="/images/eyeDropImages/Hyalomist_0.1/Hyalomist_0.1_2.JPG"
+                          alt="Thumbnail"
+                          style={{ objectFit: 'contain' }}
+                          priority
+                        />
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="flex items-center justify-center w-full" >
+                      <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
+                        <Image
+                          fill
+                          src="/images/eyeDropImages/Hyalomist_0.1/Hyalomist_0.1_3.JPG"
+                          alt="Thumbnail"
+                          style={{ objectFit: 'contain' }}
+                          priority
+                        />
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="flex items-center justify-center w-full" >
+                      <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
+                        <Image
+                          fill
+                          src="/images/eyeDropImages/Hyalomist_0.1/Hyalomist_0.1_4.JPG"
+                          alt="Thumbnail"
                           style={{ objectFit: 'contain' }}
                           priority
                         />
@@ -165,7 +195,7 @@ export default function Product() {
             {/* Text Section */}
             <div className="md:col-span-6 flex justify-start sm:pl-20 self-start h-full w-full text-center md:text-left order-2 md:order-1">
               <div className="w-full max-w-md flex flex-col justify-center h-full">
-                <p className="text-[#23A6F0] font-bold text-2xl mb-4">Hyalomoisteyedrops</p>
+                <p className="text-[#23A6F0] font-bold text-2xl mb-4">Hyalomoist Eyedrops</p>
                 {/* <p className="text-[#252B42] font-bold text-4xl leading-tight">LOTENATE</p> */}
                 <p className="text-black font-medium text-base leading-relaxed font-sans">
                   Hyalomoist eyedrops are primarily used to relieve dry eye symptoms by lubricating and moistening the eyes. They canals oprotect the eyes from irritations caused by factors like
@@ -208,7 +238,33 @@ export default function Product() {
                     <div className="flex items-center justify-center w-full" >
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
-                          src="/images/product1.png"
+                          src="/images/eyeDropImages/Moispro/Moispro-1.JPG"
+                          alt="Thumbnail"
+                          fill
+                          style={{ objectFit: 'contain' }}
+                          priority
+                        />
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="flex items-center justify-center w-full" >
+                      <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
+                        <Image
+                          src="/images/eyeDropImages/Moispro/Moispro-2.JPG"
+                          alt="Thumbnail"
+                          fill
+                          style={{ objectFit: 'contain' }}
+                          priority
+                        />
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="flex items-center justify-center w-full" >
+                      <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
+                        <Image
+                          src="/images/eyeDropImages/Moispro/Moispro-3.JPG"
                           alt="Thumbnail"
                           fill
                           style={{ objectFit: 'contain' }}
@@ -222,7 +278,7 @@ export default function Product() {
                     <div className="flex items-center justify-center w-full" >
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
-                          src="/images/product1.png"
+                          src="/images/eyeDropImages/Moispro/Moispro4.JPG"
                           alt="Thumbnail"
                           fill
                           style={{ objectFit: 'contain' }}
@@ -257,7 +313,7 @@ export default function Product() {
 
           <div className="md:col-span-6 flex justify-start self-start h-full">
             <div className="w-full max-w-md flex flex-col justify-center h-full">
-              <p className="text-[#23A6F0] font-bold text-2xl mb-4">MoisproEyeDrop</p>
+              <p className="text-[#23A6F0] font-bold text-2xl mb-4">Moispro Eyedrops</p>
               {/* <p className="text-[#252B42] font-bold text-4xl leading-tight">LOTENATE</p> */}
               <p className="text-black font-medium text-base leading-relaxed font-sans">
                 Moispro Eye Drop is a lubricating solution intended for temporary relief from eye irritation, burning, stinging, and grittiness, often caused by dry eyes. Its active ingredients are Polyethylene Glycol 400 and Propylene Glycol, which help moisturize and soothe the eyes.
@@ -286,7 +342,20 @@ export default function Product() {
                   <div className="flex items-center justify-center w-full" >
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
-                        src="/images/product1.png"
+                        fill
+                        src="/images/eyeDropImages/Moispro/Moispro-1.JPG"
+                        alt="Thumbnail"
+                        style={{ objectFit: 'contain' }}
+                        priority
+                      />
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="flex items-center justify-center w-full" >
+                    <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
+                      <Image
+                        src="/images/eyeDropImages/Moispro/Moispro-2.JPG"
                         alt="Thumbnail"
                         fill
                         style={{ objectFit: 'contain' }}
@@ -299,7 +368,20 @@ export default function Product() {
                   <div className="flex items-center justify-center w-full" >
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
-                        src="/images/product1.png"
+                        src="/images/eyeDropImages/Moispro/Moispro-3.JPG"
+                        alt="Thumbnail"
+                        fill
+                        style={{ objectFit: 'contain' }}
+                        priority
+                      />
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="flex items-center justify-center w-full" >
+                    <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
+                      <Image
+                        src="/images/eyeDropImages/Moispro/Moispro4.JPG"
                         alt="Thumbnail"
                         fill
                         style={{ objectFit: 'contain' }}
@@ -315,7 +397,7 @@ export default function Product() {
 
             {/* Text Section Below Slider */}
             <div className="mt-4 text-center">
-              <p className="text-[#23A6F0] font-bold text-2xl mb-2">MoisproEyeDrop</p>
+              <p className="text-[#23A6F0] font-bold text-2xl mb-2">Moispro Eyedrops</p>
               {/* <p className="text-[#252B42] font-bold text-3xl leading-tight">LOTENATE</p> */}
               <p className="text-black font-medium text-base leading-relaxed mt-2">
                 Moispro Eye Drop is a lubricating solution intended for temporary relief from eye irritation, burning, stinging, and grittiness, often caused by dry eyes. Its active ingredients are Polyethylene Glycol 400 and Propylene Glycol, which help moisturize and soothe the eyes.
@@ -327,7 +409,7 @@ export default function Product() {
         <div className="relative z-10 hidden md:grid grid-cols-1 md:grid-cols-12 items-center pt-5 rounded-bl-[80px] rounded-tr-[80px] min-h-[520px]">
           <div className="md:col-span-6 flex justify-center self-start h-full">
             <div className="w-full max-w-md flex flex-col justify-center h-full">
-              <p className="text-[#23A6F0] font-bold text-2xl mb-4 font-sans">Moxflu eye drops</p>
+              <p className="text-[#23A6F0] font-bold text-2xl mb-4 font-sans">Moxflu Eyedrops</p>
               {/* <p className="text-[#252B42] font-bold text-4xl leading-tight">LOTENATE</p> */}
               <p className="text-black font-medium text-base leading-relaxed font-sans">
                 Moxflu Eye Drop is an antibiotic, used in the treatment of bacterial infections of the eye. It relieves the symptoms of the infection by stopping the further growth of the causative microorganisms.
@@ -367,12 +449,12 @@ export default function Product() {
                   }}
                 >
                   {/* 2 slides with large images */}
-                  {[1, 2].map((i) => (
+                  {[1, 2,3,4].map((i) => (
                     <SwiperSlide key={i}>
                       <div className="flex items-center justify-center w-full" >
                         <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                           <Image
-                            src="/images/product1.png"
+                            src={`/images/eyeDropImages/moxflu/moxflu-${i}.JPG`}
                             alt={`Thumbnail ${i}`}
                             fill
                             style={{ objectFit: 'contain' }}
@@ -428,7 +510,7 @@ export default function Product() {
                   <div className="flex items-center justify-center w-full" >
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
-                        src="/images/product1.png"
+                        src="/images/eyeDropImages/moxflu/moxflu-1.JPG"
                         alt="Thumbnail"
                         fill
                         style={{ objectFit: 'contain' }}
@@ -441,7 +523,33 @@ export default function Product() {
                   <div className="flex items-center justify-center w-full" >
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
-                        src="/images/product1.png"
+                        src="/images/eyeDropImages/moxflu/moxflu-2.JPG"
+                        alt="Thumbnail"
+                        fill
+                        style={{ objectFit: 'contain' }}
+                        priority
+                      />
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="flex items-center justify-center w-full" >
+                    <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
+                      <Image
+                        src="/images/eyeDropImages/moxflu/moxflu-3.JPG"
+                        alt="Thumbnail"
+                        fill
+                        style={{ objectFit: 'contain' }}
+                        priority
+                      />
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="flex items-center justify-center w-full" >
+                    <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
+                      <Image
+                        src="/images/eyeDropImages/moxflu/moxflu-4.JPG"
                         alt="Thumbnail"
                         fill
                         style={{ objectFit: 'contain' }}
@@ -457,7 +565,7 @@ export default function Product() {
 
             {/* Text Section Below Slider */}
             <div className="mt-4 text-center">
-              <p className="text-[#23A6F0] font-bold text-2xl mb-4">Moxflu eye drops</p>
+              <p className="text-[#23A6F0] font-bold text-2xl mb-4">Moxflu Eyedrops</p>
               {/* <p className="text-[#252B42] font-bold text-4xl leading-tight">LOTENATE</p> */}
               <p className="text-black font-medium text-base leading-relaxed font-sans">
                 Moxflu Eye Drop is an antibiotic, used in the treatment of bacterial infections of the eye. It relieves the symptoms of the infection by stopping the further growth of the causative microorganisms.
@@ -498,7 +606,33 @@ export default function Product() {
                     <div className="flex items-center justify-center w-full" >
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
-                          src="/images/product1.png"
+                          src="/images/eyeDropImages/moxflu_LP/moxfluLP-1.JPG"
+                          alt="Thumbnail"
+                          fill
+                          style={{ objectFit: 'contain' }}
+                          priority
+                        />
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="flex items-center justify-center w-full" >
+                      <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
+                        <Image
+                          src="/images/eyeDropImages/moxflu_LP/moxfluLP-2.JPG"
+                          alt="Thumbnail"
+                          fill
+                          style={{ objectFit: 'contain' }}
+                          priority
+                        />
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="flex items-center justify-center w-full" >
+                      <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
+                        <Image
+                          src="/images/eyeDropImages/moxflu_LP/moxfluLP-3.JPG"
                           alt="Thumbnail"
                           fill
                           style={{ objectFit: 'contain' }}
@@ -512,7 +646,7 @@ export default function Product() {
                     <div className="flex items-center justify-center w-full" >
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
-                          src="/images/product1.png"
+                          src="/images/eyeDropImages/moxflu_LP/moxfluLP-4.JPG"
                           alt="Thumbnail"
                           fill
                           style={{ objectFit: 'contain' }}
@@ -547,7 +681,7 @@ export default function Product() {
 
           <div className="md:col-span-6 flex justify-start self-start h-full">
             <div className="w-full max-w-md flex flex-col justify-center h-full">
-              <p className="text-[#23A6F0] font-bold text-2xl mb-4 font-sans">Moxflu-LP eye drops</p>
+              <p className="text-[#23A6F0] font-bold text-2xl mb-4 font-sans">Moxflu-LP Eyedrops</p>
               {/* <p className="text-[#252B42] font-bold text-4xl leading-tight">LOTENATE</p> */}
               <p className="text-black font-medium text-base leading-relaxed font-sans">
                 Moxflu-LP Eye Drop is a prescription medicine used to treat eye infection with inflammation. It kills and stops the growth of bacteria and helps in relieving symptoms such as redness, itching, and swelling.
@@ -577,9 +711,9 @@ export default function Product() {
                   <div className="flex items-center justify-center w-full" >
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
-                        src="/images/product1.png"
-                        alt="Thumbnail"
                         fill
+                        src="/images/eyeDropImages/moxflu_LP/moxfluLP-1.JPG"
+                        alt="Thumbnail"
                         style={{ objectFit: 'contain' }}
                         priority
                       />
@@ -590,7 +724,33 @@ export default function Product() {
                   <div className="flex items-center justify-center w-full" >
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
-                        src="/images/product1.png"
+                        fill
+                        src="/images/eyeDropImages/moxflu_LP/moxfluLP-2.JPG"
+                        alt="Thumbnail"
+                        style={{ objectFit: 'contain' }}
+                        priority
+                      />
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="flex items-center justify-center w-full" >
+                    <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
+                      <Image
+                        fill
+                        src="/images/eyeDropImages/moxflu_LP/moxfluLP-3.JPG"
+                        alt="Thumbnail"
+                        style={{ objectFit: 'contain' }}
+                        priority
+                      />
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="flex items-center justify-center w-full" >
+                    <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
+                      <Image
+                        src="/images/eyeDropImages/moxflu_LP/moxfluLP-4.JPG"
                         alt="Thumbnail"
                         fill
                         style={{ objectFit: 'contain' }}
@@ -606,7 +766,7 @@ export default function Product() {
 
             {/* Text Section Below Slider */}
             <div className="mt-4 text-center">
-              <p className="text-[#23A6F0] font-bold text-2xl mb-2 font-sans">Moxflu-LP eye drops</p>
+              <p className="text-[#23A6F0] font-bold text-2xl mb-2 font-sans">Moxflu-LP Eyedrops</p>
               {/* <p className="text-[#252B42] font-bold text-3xl leading-tight">LOTENATE</p> */}
               <p className="text-black font-medium text-base leading-relaxed mt-2 font-sans">
                 Moxflu-LP Eye Drop is a prescription medicine used to treat eye infection with inflammation. It kills and stops the growth of bacteria and helps in relieving symptoms such as redness, itching, and swelling.
@@ -621,7 +781,7 @@ export default function Product() {
         <div className="relative z-10 hidden md:grid grid-cols-1 md:grid-cols-12 items-center pt-5 rounded-bl-[80px] rounded-tr-[80px] min-h-[520px]">
           <div className="md:col-span-6 flex justify-center self-start h-full">
             <div className="w-full max-w-md flex flex-col justify-center h-full">
-              <p className="text-[#23A6F0] font-bold text-2xl mb-4 font-sans">Nepain eye drops</p>
+              <p className="text-[#23A6F0] font-bold text-2xl mb-4 font-sans">Nepain Eyedrops</p>
               {/* <p className="text-[#252B42] font-bold text-4xl leading-tight">LOTENATE</p> */}
               <p className="text-black font-medium text-base leading-relaxed font-sans">
                 Nepain Eye Drop Nepafenac eye drops are used to relieve pain and inflammation in the eyes, particularly after cataract surgery. These drops are a non-steroidal anti-inflammatory drug (NSAID) that work by blocking the release of chemical messengers that cause pain and inflammation. They are also used to help prevent swelling in the eye after surgery.
@@ -661,12 +821,12 @@ export default function Product() {
                   }}
                 >
                   {/* 2 slides with large images */}
-                  {[1, 2].map((i) => (
+                  {[1, 2,3,4].map((i) => (
                     <SwiperSlide key={i}>
                       <div className="flex items-center justify-center w-full" >
                         <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                           <Image
-                            src="/images/product1.png"
+                            src={`/images/eyeDropImages/nepain/nepain-${i}.JPG`}
                             alt={`Thumbnail ${i}`}
                             fill
                             style={{ objectFit: 'contain' }}
@@ -722,7 +882,7 @@ export default function Product() {
                   <div className="flex items-center justify-center w-full" >
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
-                        src="/images/product1.png"
+                        src="/images/eyeDropImages/nepain/nepain-1.JPG"
                         alt="Thumbnail"
                         fill
                         style={{ objectFit: 'contain' }}
@@ -735,7 +895,33 @@ export default function Product() {
                   <div className="flex items-center justify-center w-full" >
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
-                        src="/images/product1.png"
+                        src="/images/eyeDropImages/nepain/nepain-2.JPG"
+                        alt="Thumbnail"
+                        fill
+                        style={{ objectFit: 'contain' }}
+                        priority
+                      />
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="flex items-center justify-center w-full" >
+                    <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
+                      <Image
+                        src="/images/eyeDropImages/nepain/nepain-3.JPG"
+                        alt="Thumbnail"
+                        fill
+                        style={{ objectFit: 'contain' }}
+                        priority
+                      />
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="flex items-center justify-center w-full" >
+                    <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
+                      <Image
+                        src="/images/eyeDropImages/nepain/nepain-4.JPG"
                         alt="Thumbnail"
                         fill
                         style={{ objectFit: 'contain' }}
@@ -751,7 +937,7 @@ export default function Product() {
 
             {/* Text Section Below Slider */}
             <div className="mt-4 text-center">
-              <p className="text-[#23A6F0] font-bold text-2xl mb-4">Nepain eye drops</p>
+              <p className="text-[#23A6F0] font-bold text-2xl mb-4">Nepain Eyedrops</p>
               {/* <p className="text-[#252B42] font-bold text-4xl leading-tight">LOTENATE</p> */}
               <p className="text-black font-medium text-base leading-relaxed font-sans">
                 Nepain Eye Drop Nepafenac eye drops are used to relieve pain and inflammation in the eyes, particularly after cataract surgery. These drops are a non-steroidal anti-inflammatory drug (NSAID) that work by blocking the release of chemical messengers that cause pain and inflammation. They are also used to help prevent swelling in the eye after surgery.
@@ -792,7 +978,33 @@ export default function Product() {
                     <div className="flex items-center justify-center w-full" >
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
-                          src="/images/product1.png"
+                          src="/images/eyeDropImages/nepain_PF/NepainPF-1.JPG"
+                          alt="Thumbnail"
+                          fill
+                          style={{ objectFit: 'contain' }}
+                          priority
+                        />
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="flex items-center justify-center w-full" >
+                      <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
+                        <Image
+                          src="/images/eyeDropImages/nepain_PF/NepainPF-2.JPG"
+                          alt="Thumbnail"
+                          fill
+                          style={{ objectFit: 'contain' }}
+                          priority
+                        />
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="flex items-center justify-center w-full" >
+                      <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
+                        <Image
+                          src="/images/eyeDropImages/nepain_PF/NepainPF-3.JPG"
                           alt="Thumbnail"
                           fill
                           style={{ objectFit: 'contain' }}
@@ -806,7 +1018,7 @@ export default function Product() {
                     <div className="flex items-center justify-center w-full" >
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
-                          src="/images/product1.png"
+                          src="/images/eyeDropImages/nepain_PF/nepainPF-4.JPG"
                           alt="Thumbnail"
                           fill
                           style={{ objectFit: 'contain' }}
@@ -841,7 +1053,7 @@ export default function Product() {
 
           <div className="md:col-span-6 flex justify-start self-start h-full">
             <div className="w-full max-w-md flex flex-col justify-center h-full">
-              <p className="text-[#23A6F0] font-bold text-2xl mb-4 font-sans">Nepain-PFeyedrops</p>
+              <p className="text-[#23A6F0] font-bold text-2xl mb-4 font-sans">Nepain-PF Eyedrops</p>
               {/* <p className="text-[#252B42] font-bold text-4xl leading-tight">LOTENATE</p> */}
               <p className="text-black font-medium text-base leading-relaxed font-sans">
                 Nepain-PF Eye Drop BAK Free is a pain relieving medicine used to treat pain and inflammation associated with cataract surgery. It blocks and reduces the release of certain chemicals in
@@ -876,7 +1088,7 @@ export default function Product() {
                   <div className="flex items-center justify-center w-full" >
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
-                        src="/images/product1.png"
+                        src="/images/eyeDropImages/nepain_PF/nepainPF-1.JPG"
                         alt="Thumbnail"
                         fill
                         style={{ objectFit: 'contain' }}
@@ -889,7 +1101,33 @@ export default function Product() {
                   <div className="flex items-center justify-center w-full" >
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
-                        src="/images/product1.png"
+                        src="/images/eyeDropImages/nepain_PF/nepainPF-2.JPG"
+                        alt="Thumbnail"
+                        fill
+                        style={{ objectFit: 'contain' }}
+                        priority
+                      />
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="flex items-center justify-center w-full" >
+                    <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
+                      <Image
+                        src="/images/eyeDropImages/nepain_PF/nepainPF-3.JPG"
+                        alt="Thumbnail"
+                        fill
+                        style={{ objectFit: 'contain' }}
+                        priority
+                      />
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="flex items-center justify-center w-full" >
+                    <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
+                      <Image
+                        src="/images/eyeDropImages/nepain_PF/nepainPF-4.JPG"
                         alt="Thumbnail"
                         fill
                         style={{ objectFit: 'contain' }}
@@ -905,7 +1143,7 @@ export default function Product() {
 
             {/* Text Section Below Slider */}
             <div className="mt-4 text-center">
-              <p className="text-[#23A6F0] font-bold text-2xl mb-2">Nepain-PFeyedrops</p>
+              <p className="text-[#23A6F0] font-bold text-2xl mb-2">Nepain-PF Eyedrops</p>
               {/* <p className="text-[#252B42] font-bold text-3xl leading-tight">LOTENATE</p> */}
               <p className="text-black font-medium text-base leading-relaxed mt-2">
                 Nepain-PF Eye Drop BAK Free is a pain relieving medicine used to treat pain and inflammation associated with cataract surgery. It blocks and reduces the release of certain chemicals in
@@ -926,7 +1164,7 @@ export default function Product() {
         <div className="relative z-10 hidden md:grid grid-cols-1 md:grid-cols-12 items-center pt-5 rounded-bl-[80px] rounded-tr-[80px] min-h-[520px]">
           <div className="md:col-span-6 flex justify-center self-start h-full">
             <div className="w-full max-w-md flex flex-col justify-center h-full">
-              <p className="text-[#23A6F0] font-bold text-2xl mb-4 font-sans">Cellmoist0.5%EYEDROPS</p>
+              <p className="text-[#23A6F0] font-bold text-2xl mb-4 font-sans">Cellmoist0.5% Eyedrops</p>
               {/* <p className="text-[#252B42] font-bold text-4xl leading-tight">LOTENATE</p> */}
               <p className="text-black font-medium text-base leading-relaxed font-sans">
                 Cellmoist 0.5% Eye Drop is an eye lubricant or artificial tears used to relieve dry eyes. This can happen because not enough tears are made to keep the eye lubricated. It helps to soothe the irritation and burning seen in dry eyes by maintaining proper lubrication of the eyes.
@@ -966,12 +1204,12 @@ export default function Product() {
                   }}
                 >
                   {/* 2 slides with large images */}
-                  {[1, 2].map((i) => (
+                  {[1, 2,3,4].map((i) => (
                     <SwiperSlide key={i}>
                       <div className="flex items-center justify-center w-full" >
                         <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                           <Image
-                            src="/images/product1.png"
+                            src={`/images/eyeDropImages/cellmoist_0.5/cellmoist_0.5_${i}.JPG`}
                             alt={`Thumbnail ${i}`}
                             fill
                             style={{ objectFit: 'contain' }}
@@ -1027,7 +1265,7 @@ export default function Product() {
                   <div className="flex items-center justify-center w-full" >
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
-                        src="/images/product1.png"
+                        src="/images/eyeDropImages/cellmoist_0.5/cellmoist_0.5_1.JPG"
                         alt="Thumbnail"
                         fill
                         style={{ objectFit: 'contain' }}
@@ -1040,7 +1278,33 @@ export default function Product() {
                   <div className="flex items-center justify-center w-full" >
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
-                        src="/images/product1.png"
+                        src="/images/eyeDropImages/cellmoist_0.5/cellmoist_0.5_2.JPG"
+                        alt="Thumbnail"
+                        fill
+                        style={{ objectFit: 'contain' }}
+                        priority
+                      />
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="flex items-center justify-center w-full" >
+                    <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
+                      <Image
+                        src="/images/eyeDropImages/cellmoist_0.5/cellmoist_0.5_3.JPG"
+                        alt="Thumbnail"
+                        fill
+                        style={{ objectFit: 'contain' }}
+                        priority
+                      />
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="flex items-center justify-center w-full" >
+                    <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
+                      <Image
+                        src="/images/eyeDropImages/cellmoist_0.5/cellmoist_0.5_4.JPG"
                         alt="Thumbnail"
                         fill
                         style={{ objectFit: 'contain' }}
@@ -1056,7 +1320,7 @@ export default function Product() {
 
             {/* Text Section Below Slider */}
             <div className="mt-4 text-center">
-              <p className="text-[#23A6F0] font-bold text-2xl mb-4">.Cellmoist0.5%EYEDROPS</p>
+              <p className="text-[#23A6F0] font-bold text-2xl mb-4">Cellmoist0.5% Eyedrops</p>
               {/* <p className="text-[#252B42] font-bold text-4xl leading-tight">LOTENATE</p> */}
               <p className="text-black font-medium text-base leading-relaxed font-sans">
                 Cellmoist 0.5% Eye Drop is an eye lubricant or artificial tears used to relieve dry eyes. This can happen because not enough tears are made to keep the eye lubricated. It helps to soothe the irritation and burning seen in dry eyes by maintaining proper lubrication of the eyes.
@@ -1097,7 +1361,33 @@ export default function Product() {
                     <div className="flex items-center justify-center w-full" >
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
-                          src="/images/product1.png"
+                          src="/images/eyeDropImages/cellmoist_0.1/cellmoist_1_1.JPG"
+                          alt="Thumbnail"
+                          fill
+                          style={{ objectFit: 'contain' }}
+                          priority
+                        />
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="flex items-center justify-center w-full" >
+                      <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
+                        <Image
+                          src="/images/eyeDropImages/cellmoist_0.1/cellmoist_1_2.JPG"
+                          alt="Thumbnail"
+                          fill
+                          style={{ objectFit: 'contain' }}
+                          priority
+                        />
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="flex items-center justify-center w-full" >
+                      <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
+                        <Image
+                          src="/images/eyeDropImages/cellmoist_0.1/cellmoist_1_3.JPG"
                           alt="Thumbnail"
                           fill
                           style={{ objectFit: 'contain' }}
@@ -1111,7 +1401,7 @@ export default function Product() {
                     <div className="flex items-center justify-center w-full" style={{ minHeight: "300px" }} >
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
-                          src="/images/product1.png"
+                          src="/images/eyeDropImages/cellmoist_0.1/cellmoist_1_4.JPG"
                           alt="Thumbnail"
                           fill
                           style={{ objectFit: 'contain' }}
@@ -1146,7 +1436,7 @@ export default function Product() {
 
           <div className="md:col-span-6 flex justify-start self-start h-full">
             <div className="w-full max-w-md flex flex-col justify-center h-full">
-              <p className="text-[#23A6F0] font-bold text-2xl mb-4 font-sans">Cellmoist 1%EYEDROPS</p>
+              <p className="text-[#23A6F0] font-bold text-2xl mb-4 font-sans">Cellmoist 1% Eyedrops</p>
               {/* <p className="text-[#252B42] font-bold text-4xl leading-tight">LOTENATE</p> */}
               <p className="text-black font-medium text-base leading-relaxed font-sans">
                 Cellmoist 1% is used as a lubricant to relive irritation and discomfort due to dryness of the eyes or due to exposure of the eyes to wind or sun. Carboxymethylcellulose is a lubricant. It works similar to natural tears and provides temporary relief from burning and discomfort due to dryness of the eye.
@@ -1176,7 +1466,7 @@ export default function Product() {
                   <div className="flex items-center justify-center w-full" >
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
-                        src="/images/product1.png"
+                        src="/images/eyeDropImages/cellmoist_0.1/cellmoist_1_1.JPG"
                         alt="Thumbnail"
                         fill
                         style={{ objectFit: 'contain' }}
@@ -1189,7 +1479,33 @@ export default function Product() {
                   <div className="flex items-center justify-center w-full" >
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
-                        src="/images/product1.png"
+                        src="/images/eyeDropImages/cellmoist_0.1/cellmoist_1_2.JPG"
+                        alt="Thumbnail"
+                        fill
+                        style={{ objectFit: 'contain' }}
+                        priority
+                      />
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="flex items-center justify-center w-full" >
+                    <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
+                      <Image
+                        src="/images/eyeDropImages/cellmoist_0.1/cellmoist_1_3.JPG"
+                        alt="Thumbnail"
+                        fill
+                        style={{ objectFit: 'contain' }}
+                        priority
+                      />
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="flex items-center justify-center w-full" >
+                    <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
+                      <Image
+                        src="/images/eyeDropImages/cellmoist_0.1/cellmoist_1_4.JPG"
                         alt="Thumbnail"
                         fill
                         style={{ objectFit: 'contain' }}
@@ -1205,7 +1521,7 @@ export default function Product() {
 
             {/* Text Section Below Slider */}
             <div className="mt-4 text-center">
-              <p className="text-[#23A6F0] font-bold text-2xl mb-2">Cellmoist 1%EYEDROPS</p>
+              <p className="text-[#23A6F0] font-bold text-2xl mb-2">Cellmoist 1% Eyedrops</p>
               {/* <p className="text-[#252B42] font-bold text-3xl leading-tight">LOTENATE</p> */}
               <p className="text-black font-medium text-base leading-relaxed mt-2">
                 Cellmoist 1% is used as a lubricant to relive irritation and discomfort due to dryness of the eyes or due to exposure of the eyes to wind or sun. Carboxymethylcellulose is a lubricant. It works similar to natural tears and provides temporary relief from burning and discomfort due to dryness of the eye.
@@ -1221,7 +1537,7 @@ export default function Product() {
         <div className="relative z-10 hidden md:grid grid-cols-1 md:grid-cols-12 items-center pt-5 rounded-bl-[80px] rounded-tr-[80px] min-h-[520px]">
           <div className="md:col-span-6 flex justify-center self-start h-full">
             <div className="w-full max-w-md flex flex-col justify-center h-full">
-              <p className="text-[#23A6F0] font-bold text-2xl mb-4 font-sans">Hyalomoist TG eye drops</p>
+              <p className="text-[#23A6F0] font-bold text-2xl mb-4 font-sans">HyalomoistTG Eyedrops</p>
               {/* <p className="text-[#252B42] font-bold text-4xl leading-tight">LOTENATE</p> */}
               <p className="text-black font-medium text-base leading-relaxed font-sans">
                 Hyalomoist TG Eye Drop is a lubricant. It is used in the treatment of dry eyes. It moistens the eyes and provides relief from discomfort and temporary burning. It also helps in treating corneal burns by forming a soothing layer that reduces irritation and protects the damaged cornea.
@@ -1262,12 +1578,12 @@ export default function Product() {
                   }}
                 >
                   {/* 2 slides with large images */}
-                  {[1, 2].map((i) => (
+                  {[1, 2,3,4].map((i) => (
                     <SwiperSlide key={i}>
                       <div className="flex items-center justify-center w-full" >
                         <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                           <Image
-                            src="/images/product1.png"
+                            src={`/images/eyeDropImages/hyalomist_tg/hyalomoist_tg_${i}.JPG`}
                             alt={`Thumbnail ${i}`}
                             fill
                             style={{ objectFit: 'contain' }}
@@ -1323,7 +1639,7 @@ export default function Product() {
                   <div className="flex items-center justify-center w-full" >
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
-                        src="/images/product1.png"
+                        src="/images/eyeDropImages/hyalomist_tg/hyalomoist_tg_1.JPG"
                         alt="Thumbnail"
                         fill
                         style={{ objectFit: 'contain' }}
@@ -1336,7 +1652,33 @@ export default function Product() {
                   <div className="flex items-center justify-center w-full" >
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
-                        src="/images/product1.png"
+                        src="/images/eyeDropImages/hyalomist_tg/hyalomoist_tg_2.JPG"
+                        alt="Thumbnail"
+                        fill
+                        style={{ objectFit: 'contain' }}
+                        priority
+                      />
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="flex items-center justify-center w-full" >
+                    <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
+                      <Image
+                        src="/images/eyeDropImages/hyalomist_tg/hyalomoist_tg_3.JPG"
+                        alt="Thumbnail"
+                        fill
+                        style={{ objectFit: 'contain' }}
+                        priority
+                      />
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="flex items-center justify-center w-full" >
+                    <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
+                      <Image
+                        src="/images/eyeDropImages/hyalomist_tg/hyalomoist_tg_4.JPG"
                         alt="Thumbnail"
                         fill
                         style={{ objectFit: 'contain' }}
@@ -1352,7 +1694,7 @@ export default function Product() {
 
             {/* Text Section Below Slider */}
             <div className="mt-4 text-center">
-              <p className="text-[#23A6F0] font-bold text-2xl mb-4">Hyalomoist TG eye drops</p>
+              <p className="text-[#23A6F0] font-bold text-2xl mb-4">HyalomoistTG Eyedrops</p>
               {/* <p className="text-[#252B42] font-bold text-4xl leading-tight">LOTENATE</p> */}
               <p className="text-black font-medium text-base leading-relaxed font-sans">
                 Hyalomoist TG Eye Drop is a lubricant. It is used in the treatment of dry eyes. It moistens the eyes and provides relief from discomfort and temporary burning. It also helps in treating corneal burns by forming a soothing layer that reduces irritation and protects the damaged cornea.
@@ -1394,7 +1736,33 @@ export default function Product() {
                     <div className="flex items-center justify-center w-full" >
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
-                          src="/images/product1.png"
+                          src="/images/eyeDropImages/lotenate/Lotenate-1.JPG"
+                          alt="Thumbnail"
+                          fill
+                          style={{ objectFit: 'contain' }}
+                          priority
+                        />
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="flex items-center justify-center w-full" >
+                      <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
+                        <Image
+                          src="/images/eyeDropImages/lotenate/Lotenate-2.JPG"
+                          alt="Thumbnail"
+                          fill
+                          style={{ objectFit: 'contain' }}
+                          priority
+                        />
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="flex items-center justify-center w-full" >
+                      <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
+                        <Image
+                          src="/images/eyeDropImages/lotenate/Lotenate-3.JPG"
                           alt="Thumbnail"
                           fill
                           style={{ objectFit: 'contain' }}
@@ -1408,7 +1776,7 @@ export default function Product() {
                     <div className="flex items-center justify-center w-full" >
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
-                          src="/images/product1.png"
+                          src="/images/eyeDropImages/lotenate/Lotenate-4.JPG"
                           alt="Thumbnail"
                           fill
                           style={{ objectFit: 'contain' }}
@@ -1443,7 +1811,7 @@ export default function Product() {
 
           <div className="md:col-span-6 flex justify-start self-start h-full">
             <div className="w-full max-w-md flex flex-col justify-center h-full">
-              <p className="text-[#23A6F0] font-bold text-2xl mb-4 font-sans">Lotenate0.5%EyeDrops</p>
+              <p className="text-[#23A6F0] font-bold text-2xl mb-4 font-sans">Lotenate0.5% Eyedrops</p>
               {/* <p className="text-[#252B42] font-bold text-4xl leading-tight">LOTENATE</p> */}
               <p className="text-black font-medium text-base leading-relaxed font-sans">
                 Lotenate 0.5% Eye Drop helps relieve symptoms such as pain, redness, swelling, itching and watering of eyes due to an infection or allergy. This medicine works by decreasing the production of certain chemicals that cause inflammation of the eyes.
@@ -1473,7 +1841,7 @@ export default function Product() {
                   <div className="flex items-center justify-center w-full" >
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
-                        src="/images/product1.png"
+                        src="/images/eyeDropImages/lotenate/Lotenate-1.JPG"
                         alt="Thumbnail"
                         fill
                         style={{ objectFit: 'contain' }}
@@ -1486,9 +1854,35 @@ export default function Product() {
                   <div className="flex items-center justify-center w-full" >
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
-                        src="/images/product1.png"
+                        src="/images/eyeDropImages/lotenate/Lotenate-2.JPG"
                         alt="Thumbnail"
                         fill
+                        style={{ objectFit: 'contain' }}
+                        priority
+                      />
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="flex items-center justify-center w-full" >
+                    <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
+                      <Image
+                        src="/images/eyeDropImages/lotenate/Lotenate-3.JPG"
+                        alt="Thumbnail"
+                        fill
+                        style={{ objectFit: 'contain' }}
+                        priority
+                      />
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="flex items-center justify-center w-full" >
+                    <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
+                      <Image
+                        fill
+                        src="/images/eyeDropImages/lotenate/Lotenate-4.JPG"
+                        alt="test"
                         style={{ objectFit: 'contain' }}
                         priority
                       />
@@ -1502,7 +1896,7 @@ export default function Product() {
 
             {/* Text Section Below Slider */}
             <div className="mt-4 text-center">
-              <p className="text-[#23A6F0] font-bold text-2xl mb-2">Lotenate0.5%EyeDrops</p>
+              <p className="text-[#23A6F0] font-bold text-2xl mb-2">Lotenate0.5% Eyedrops</p>
               {/* <p className="text-[#252B42] font-bold text-3xl leading-tight">LOTENATE</p> */}
               <p className="text-black font-medium text-base leading-relaxed mt-2">
                 Lotenate 0.5% Eye Drop helps relieve symptoms such as pain, redness, swelling, itching and watering of eyes due to an infection or allergy. This medicine works by decreasing the production of certain chemicals that cause inflammation of the eyes.

@@ -51,27 +51,31 @@ export default function Contact() {
 
         {/* Overlay Menu */}
         {isOpen && (
-          <div className="md:hidden fixed inset-0 z-40 bg-white px-6 py-6 flex flex-col gap-6">
-            {/* Close Button */}
-            <button onClick={() => setIsOpen(false)} className="absolute top-8 right-10">
-              <div className="w-6 h-6 relative">
-                <span className="absolute w-6 h-0.5 bg-black rotate-45 origin-center" />
-                <span className="absolute w-6 h-0.5 bg-black -rotate-45 origin-center" />
-              </div>
-            </button>
+          <>
+            <div className="md:hidden fixed h-60 ml-7 inset-0 z-40 bg-white px-6 py-6 flex flex-col gap-6">
+              {/* Close Button */}
+              <button onClick={() => setIsOpen(false)} className="absolute top-8 right-10">
+                <div className="w-6 h-6 relative">
+                  <span className="absolute w-6 h-0.5 bg-black rotate-45 origin-center" />
+                  <span className="absolute w-6 h-0.5 bg-black -rotate-45 origin-center" />
+                </div>
+              </button>
 
-            {/* Menu Items */}
-            <div className="mt-10 flex flex-col gap-4">
-              <Link href="/" className="text-gray-600 hover:text-[#23A6F0] font-semibold">Home</Link>
-              <Link href="/product" className="text-gray-600 hover:text-[#23A6F0] font-semibold">Product</Link>
-              <Link href="/contact" className="text-[#23A6F0] font-semibold">Contact</Link>
+              {/* Menu Items */}
+              <div className="mt-10 flex flex-col gap-4">
+                <Link href="/" className="text-gray-600 hover:text-[#23A6F0] font-semibold">Home</Link>
+                <Link href="/product" className="text-gray-600  hover:text-[#23A6F0] font-semibold">Product</Link>
+                <Link href="/contact" className="text-[#23A6F0] font-semibold">Contact</Link>
+              </div>
             </div>
-          </div>
+            <div className="md:hidden bg-black opacity-30 h-[100vh] w-[100vh] z-39 fixed top-0">
+            </div>
+          </>
         )}
 
         {/* Main */}
         <main
-          className="flex-1 py-12 bg-center bg-no-repeat sm:bg-cover sm:bg-[url('/images/cabinet.jpg')] bg-white"
+          className="flex-1 py-12 bg-no-repeat sm:bg-cover sm:bg-[url('/images/cabinet.jpg')] bg-white"
         >
           {/* Desktop View */}
           <div className="hidden sm:block w-full h-full p-6 mt-24 sm:ml-24">
