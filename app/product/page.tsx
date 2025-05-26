@@ -123,7 +123,7 @@ export default function Product() {
                     <div className="flex items-center justify-center w-full" >
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
-                          alt=""
+                          alt="Hyalomoist Eyedrops"
                           src="/images/eyeDropImages/Hyalomist_0.1/Hyalomist_0.1_1.JPG"
                           style={{ objectFit: 'contain' }}
                           fill
@@ -139,7 +139,7 @@ export default function Product() {
                         <Image
                           fill
                           src="/images/eyeDropImages/Hyalomist_0.1/Hyalomist_0.1_2.JPG"
-                          alt="Thumbnail"
+                          alt="Hyalomoist Eyedrops"
                           style={{ objectFit: 'contain' }}
                           priority
                         />
@@ -152,7 +152,7 @@ export default function Product() {
                         <Image
                           fill
                           src="/images/eyeDropImages/Hyalomist_0.1/Hyalomist_0.1_3.JPG"
-                          alt="Thumbnail"
+                          alt="Hyalomoist Eyedrops"
                           style={{ objectFit: 'contain' }}
                           priority
                         />
@@ -165,7 +165,7 @@ export default function Product() {
                         <Image
                           fill
                           src="/images/eyeDropImages/Hyalomist_0.1/Hyalomist_0.1_4.JPG"
-                          alt="Thumbnail"
+                          alt="Hyalomoist Eyedrops"
                           style={{ objectFit: 'contain' }}
                           priority
                         />
@@ -239,7 +239,7 @@ export default function Product() {
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
                           src="/images/eyeDropImages/Moispro/Moispro-1.JPG"
-                          alt="Thumbnail"
+                          alt="Moispro Eyedrops"
                           fill
                           style={{ objectFit: 'contain' }}
                           priority
@@ -252,7 +252,7 @@ export default function Product() {
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
                           src="/images/eyeDropImages/Moispro/Moispro-2.JPG"
-                          alt="Thumbnail"
+                          alt="Moispro Eyedrops"
                           fill
                           style={{ objectFit: 'contain' }}
                           priority
@@ -265,7 +265,7 @@ export default function Product() {
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
                           src="/images/eyeDropImages/Moispro/Moispro-3.JPG"
-                          alt="Thumbnail"
+                          alt="Moispro Eyedrops"
                           fill
                           style={{ objectFit: 'contain' }}
                           priority
@@ -278,8 +278,8 @@ export default function Product() {
                     <div className="flex items-center justify-center w-full" >
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
-                          src="/images/eyeDropImages/Moispro/Moispro4.JPG"
-                          alt="Thumbnail"
+                          src="/images/eyeDropImages/Moispro/Moispro-4.JPG"
+                          alt="Moispro Eyedrops"
                           fill
                           style={{ objectFit: 'contain' }}
                           priority
@@ -344,7 +344,7 @@ export default function Product() {
                       <Image
                         fill
                         src="/images/eyeDropImages/Moispro/Moispro-1.JPG"
-                        alt="Thumbnail"
+                        alt="Moispro Eyedrops"
                         style={{ objectFit: 'contain' }}
                         priority
                       />
@@ -356,7 +356,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/Moispro/Moispro-2.JPG"
-                        alt="Thumbnail"
+                        alt="Moispro Eyedrops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -369,7 +369,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/Moispro/Moispro-3.JPG"
-                        alt="Thumbnail"
+                        alt="Moispro Eyedrops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -381,8 +381,8 @@ export default function Product() {
                   <div className="flex items-center justify-center w-full" >
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
-                        src="/images/eyeDropImages/Moispro/Moispro4.JPG"
-                        alt="Thumbnail"
+                        src="/images/eyeDropImages/Moispro/Moispro-4.JPG"
+                        alt="Moispro Eyedrops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -454,8 +454,8 @@ export default function Product() {
                       <div className="flex items-center justify-center w-full" >
                         <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                           <Image
-                            src={`/images/eyeDropImages/moxflu/moxflu-${i}.JPG`}
-                            alt={`Thumbnail ${i}`}
+                            src={`/images/eyeDropImages/moxflu/moxflu--${i}.JPG`}
+                            alt={`Moxflu Eyedrops ${i}`}
                             fill
                             style={{ objectFit: 'contain' }}
                             priority
@@ -510,8 +510,8 @@ export default function Product() {
                   <div className="flex items-center justify-center w-full" >
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
-                        src="/images/eyeDropImages/moxflu/moxflu-1.JPG"
-                        alt="Thumbnail"
+                        src="/images/eyeDropImages/moxflu/moxflu--1.JPG"
+                        alt="Moxflu Eyedrops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -523,8 +523,8 @@ export default function Product() {
                   <div className="flex items-center justify-center w-full" >
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
-                        src="/images/eyeDropImages/moxflu/moxflu-2.JPG"
-                        alt="Thumbnail"
+                        src="/images/eyeDropImages/moxflu/moxflu--2.JPG"
+                        alt="Moxflu Eyedrops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -536,8 +536,8 @@ export default function Product() {
                   <div className="flex items-center justify-center w-full" >
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
-                        src="/images/eyeDropImages/moxflu/moxflu-3.JPG"
-                        alt="Thumbnail"
+                        src="/images/eyeDropImages/moxflu/moxflu--3.JPG"
+                        alt="Moxflu Eyedrops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -549,8 +549,8 @@ export default function Product() {
                   <div className="flex items-center justify-center w-full" >
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
-                        src="/images/eyeDropImages/moxflu/moxflu-4.JPG"
-                        alt="Thumbnail"
+                        src="/images/eyeDropImages/moxflu/moxflu--4.JPG"
+                        alt="Moxflu Eyedrops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -607,7 +607,7 @@ export default function Product() {
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
                           src="/images/eyeDropImages/moxflu_LP/moxfluLP-1.JPG"
-                          alt="Thumbnail"
+                          alt="Moxflu-LP Eyedrops"
                           fill
                           style={{ objectFit: 'contain' }}
                           priority
@@ -620,7 +620,7 @@ export default function Product() {
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
                           src="/images/eyeDropImages/moxflu_LP/moxfluLP-2.JPG"
-                          alt="Thumbnail"
+                          alt="Moxflu-LP Eyedrops"
                           fill
                           style={{ objectFit: 'contain' }}
                           priority
@@ -632,8 +632,8 @@ export default function Product() {
                     <div className="flex items-center justify-center w-full" >
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
-                          src="/images/eyeDropImages/moxflu_LP/moxfluLP-3.JPG"
-                          alt="Thumbnail"
+                          src="/images/eyeDropImages/moxflu_LP/moxfluLP-3.jpg"
+                          alt="Moxflu-LP Eyedrops"
                           fill
                           style={{ objectFit: 'contain' }}
                           priority
@@ -646,8 +646,8 @@ export default function Product() {
                     <div className="flex items-center justify-center w-full" >
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
-                          src="/images/eyeDropImages/moxflu_LP/moxfluLP-4.JPG"
-                          alt="Thumbnail"
+                          src="/images/eyeDropImages/moxflu_LP/moxfluLP-4.jpg"
+                          alt="Moxflu-LP Eyedrops"
                           fill
                           style={{ objectFit: 'contain' }}
                           priority
@@ -713,7 +713,7 @@ export default function Product() {
                       <Image
                         fill
                         src="/images/eyeDropImages/moxflu_LP/moxfluLP-1.JPG"
-                        alt="Thumbnail"
+                        alt="Moxflu-LP Eyedrops"
                         style={{ objectFit: 'contain' }}
                         priority
                       />
@@ -726,7 +726,7 @@ export default function Product() {
                       <Image
                         fill
                         src="/images/eyeDropImages/moxflu_LP/moxfluLP-2.JPG"
-                        alt="Thumbnail"
+                        alt="Moxflu-LP Eyedrops"
                         style={{ objectFit: 'contain' }}
                         priority
                       />
@@ -738,8 +738,8 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         fill
-                        src="/images/eyeDropImages/moxflu_LP/moxfluLP-3.JPG"
-                        alt="Thumbnail"
+                        src="/images/eyeDropImages/moxflu_LP/moxfluLP-3.jpg"
+                        alt="Moxflu-LP Eyedrops"
                         style={{ objectFit: 'contain' }}
                         priority
                       />
@@ -750,8 +750,8 @@ export default function Product() {
                   <div className="flex items-center justify-center w-full" >
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
-                        src="/images/eyeDropImages/moxflu_LP/moxfluLP-4.JPG"
-                        alt="Thumbnail"
+                        src="/images/eyeDropImages/moxflu_LP/moxfluLP-4.jpg"
+                        alt="Moxflu-LP Eyedrops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -826,8 +826,8 @@ export default function Product() {
                       <div className="flex items-center justify-center w-full" >
                         <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                           <Image
-                            src={`/images/eyeDropImages/nepain/nepain-${i}.JPG`}
-                            alt={`Thumbnail ${i}`}
+                            src={`/images/eyeDropImages/nepain/nepain--${i}.JPG`}
+                            alt={`Nepain Eyedrops ${i}`}
                             fill
                             style={{ objectFit: 'contain' }}
                             priority
@@ -882,8 +882,8 @@ export default function Product() {
                   <div className="flex items-center justify-center w-full" >
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
-                        src="/images/eyeDropImages/nepain/nepain-1.JPG"
-                        alt="Thumbnail"
+                        src="/images/eyeDropImages/nepain/nepain--1.JPG"
+                        alt="Nepain Eyedrops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -895,8 +895,8 @@ export default function Product() {
                   <div className="flex items-center justify-center w-full" >
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
-                        src="/images/eyeDropImages/nepain/nepain-2.JPG"
-                        alt="Thumbnail"
+                        src="/images/eyeDropImages/nepain/nepain--2.JPG"
+                        alt="Nepain Eyedrops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -908,8 +908,8 @@ export default function Product() {
                   <div className="flex items-center justify-center w-full" >
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
-                        src="/images/eyeDropImages/nepain/nepain-3.JPG"
-                        alt="Thumbnail"
+                        src="/images/eyeDropImages/nepain/nepain--3.JPG"
+                        alt="Nepain Eyedrops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -921,8 +921,8 @@ export default function Product() {
                   <div className="flex items-center justify-center w-full" >
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
-                        src="/images/eyeDropImages/nepain/nepain-4.JPG"
-                        alt="Thumbnail"
+                        src="/images/eyeDropImages/nepain/nepain--4.JPG"
+                        alt="Nepain Eyedrops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -979,7 +979,7 @@ export default function Product() {
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
                           src="/images/eyeDropImages/nepain_PF/NepainPF-1.JPG"
-                          alt="Thumbnail"
+                          alt="Nepain-PF Eyedrops"
                           fill
                           style={{ objectFit: 'contain' }}
                           priority
@@ -992,7 +992,7 @@ export default function Product() {
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
                           src="/images/eyeDropImages/nepain_PF/NepainPF-2.JPG"
-                          alt="Thumbnail"
+                          alt="Nepain-PF Eyedrops"
                           fill
                           style={{ objectFit: 'contain' }}
                           priority
@@ -1004,8 +1004,8 @@ export default function Product() {
                     <div className="flex items-center justify-center w-full" >
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
-                          src="/images/eyeDropImages/nepain_PF/NepainPF-3.JPG"
-                          alt="Thumbnail"
+                          src="/images/eyeDropImages/nepain_PF/NepainPF-3.jpg"
+                          alt="Nepain-PF Eyedrops"
                           fill
                           style={{ objectFit: 'contain' }}
                           priority
@@ -1018,8 +1018,8 @@ export default function Product() {
                     <div className="flex items-center justify-center w-full" >
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
-                          src="/images/eyeDropImages/nepain_PF/nepainPF-4.JPG"
-                          alt="Thumbnail"
+                          src="/images/eyeDropImages/nepain_PF/nepainPF-4.jpg"
+                          alt="Nepain-PF Eyedrops"
                           fill
                           style={{ objectFit: 'contain' }}
                           priority
@@ -1089,7 +1089,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/nepain_PF/nepainPF-1.JPG"
-                        alt="Thumbnail"
+                        alt="Nepain-PF Eyedrops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -1102,7 +1102,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/nepain_PF/nepainPF-2.JPG"
-                        alt="Thumbnail"
+                        alt="Nepain-PF Eyedrops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -1114,8 +1114,8 @@ export default function Product() {
                   <div className="flex items-center justify-center w-full" >
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
-                        src="/images/eyeDropImages/nepain_PF/nepainPF-3.JPG"
-                        alt="Thumbnail"
+                        src="/images/eyeDropImages/nepain_PF/nepainPF-3.jpg"
+                        alt="Nepain-PF Eyedrops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -1127,8 +1127,8 @@ export default function Product() {
                   <div className="flex items-center justify-center w-full" >
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
-                        src="/images/eyeDropImages/nepain_PF/nepainPF-4.JPG"
-                        alt="Thumbnail"
+                        src="/images/eyeDropImages/nepain_PF/nepainPF-4.jpg"
+                        alt="Nepain-PF Eyedrops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -1210,7 +1210,7 @@ export default function Product() {
                         <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                           <Image
                             src={`/images/eyeDropImages/cellmoist_0.5/cellmoist_0.5_${i}.JPG`}
-                            alt={`Thumbnail ${i}`}
+                            alt={`Cellmoist0.5% Eyedrops ${i}`}
                             fill
                             style={{ objectFit: 'contain' }}
                             priority
@@ -1266,7 +1266,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/cellmoist_0.5/cellmoist_0.5_1.JPG"
-                        alt="Thumbnail"
+                        alt="Cellmoist0.5% Eyedrops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -1279,7 +1279,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/cellmoist_0.5/cellmoist_0.5_2.JPG"
-                        alt="Thumbnail"
+                        alt="Cellmoist0.5% Eyedrops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -1292,7 +1292,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/cellmoist_0.5/cellmoist_0.5_3.JPG"
-                        alt="Thumbnail"
+                        alt="Cellmoist0.5% Eyedrops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -1305,7 +1305,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/cellmoist_0.5/cellmoist_0.5_4.JPG"
-                        alt="Thumbnail"
+                        alt="Cellmoist0.5% Eyedrops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -1362,7 +1362,7 @@ export default function Product() {
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
                           src="/images/eyeDropImages/cellmoist_0.1/cellmoist_1_1.JPG"
-                          alt="Thumbnail"
+                          alt="Cellmoist 1% Eyedrops"
                           fill
                           style={{ objectFit: 'contain' }}
                           priority
@@ -1375,7 +1375,7 @@ export default function Product() {
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
                           src="/images/eyeDropImages/cellmoist_0.1/cellmoist_1_2.JPG"
-                          alt="Thumbnail"
+                          alt="Cellmoist 1% Eyedrops"
                           fill
                           style={{ objectFit: 'contain' }}
                           priority
@@ -1388,7 +1388,7 @@ export default function Product() {
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
                           src="/images/eyeDropImages/cellmoist_0.1/cellmoist_1_3.JPG"
-                          alt="Thumbnail"
+                          alt="Cellmoist 1% Eyedrops"
                           fill
                           style={{ objectFit: 'contain' }}
                           priority
@@ -1402,7 +1402,7 @@ export default function Product() {
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
                           src="/images/eyeDropImages/cellmoist_0.1/cellmoist_1_4.JPG"
-                          alt="Thumbnail"
+                          alt="Cellmoist 1% Eyedrops"
                           fill
                           style={{ objectFit: 'contain' }}
                           priority
@@ -1467,7 +1467,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/cellmoist_0.1/cellmoist_1_1.JPG"
-                        alt="Thumbnail"
+                        alt="Cellmoist 1% Eyedrops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -1480,7 +1480,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/cellmoist_0.1/cellmoist_1_2.JPG"
-                        alt="Thumbnail"
+                        alt="Cellmoist 1% Eyedrops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -1493,7 +1493,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/cellmoist_0.1/cellmoist_1_3.JPG"
-                        alt="Thumbnail"
+                        alt="Cellmoist 1% Eyedrops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -1506,7 +1506,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/cellmoist_0.1/cellmoist_1_4.JPG"
-                        alt="Thumbnail"
+                        alt="Cellmoist 1% Eyedrops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -1584,7 +1584,7 @@ export default function Product() {
                         <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                           <Image
                             src={`/images/eyeDropImages/hyalomist_tg/hyalomoist_tg_${i}.JPG`}
-                            alt={`Thumbnail ${i}`}
+                            alt={`HyalomoistTG Eyedrops ${i}`}
                             fill
                             style={{ objectFit: 'contain' }}
                             priority
@@ -1640,7 +1640,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/hyalomist_tg/hyalomoist_tg_1.JPG"
-                        alt="Thumbnail"
+                        alt="HyalomoistTG Eyedrops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -1653,7 +1653,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/hyalomist_tg/hyalomoist_tg_2.JPG"
-                        alt="Thumbnail"
+                        alt="HyalomoistTG Eyedrops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -1666,7 +1666,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/hyalomist_tg/hyalomoist_tg_3.JPG"
-                        alt="Thumbnail"
+                        alt="HyalomoistTG Eyedrops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -1679,7 +1679,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/hyalomist_tg/hyalomoist_tg_4.JPG"
-                        alt="Thumbnail"
+                        alt="HyalomoistTG Eyedrops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -1737,7 +1737,7 @@ export default function Product() {
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
                           src="/images/eyeDropImages/lotenate/Lotenate-1.JPG"
-                          alt="Thumbnail"
+                          alt="Lotenate0.5% Eyedrops"
                           fill
                           style={{ objectFit: 'contain' }}
                           priority
@@ -1750,7 +1750,7 @@ export default function Product() {
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
                           src="/images/eyeDropImages/lotenate/Lotenate-2.JPG"
-                          alt="Thumbnail"
+                          alt="Lotenate0.5% Eyedrops"
                           fill
                           style={{ objectFit: 'contain' }}
                           priority
@@ -1763,7 +1763,7 @@ export default function Product() {
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
                           src="/images/eyeDropImages/lotenate/Lotenate-3.JPG"
-                          alt="Thumbnail"
+                          alt="Lotenate0.5% Eyedrops"
                           fill
                           style={{ objectFit: 'contain' }}
                           priority
@@ -1777,7 +1777,7 @@ export default function Product() {
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
                           src="/images/eyeDropImages/lotenate/Lotenate-4.JPG"
-                          alt="Thumbnail"
+                          alt="Lotenate0.5% Eyedrops"
                           fill
                           style={{ objectFit: 'contain' }}
                           priority
@@ -1842,7 +1842,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/lotenate/Lotenate-1.JPG"
-                        alt="Thumbnail"
+                        alt="Lotenate0.5% Eyedrops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -1855,7 +1855,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/lotenate/Lotenate-2.JPG"
-                        alt="Thumbnail"
+                        alt="Lotenate0.5% Eyedrops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -1868,7 +1868,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/lotenate/Lotenate-3.JPG"
-                        alt="Thumbnail"
+                        alt="Lotenate0.5% Eyedrops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
