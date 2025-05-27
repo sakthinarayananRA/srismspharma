@@ -19,7 +19,13 @@ export default function Contact() {
               className="h-20 w-10"
             />
           </div>
-          <h1 className="text-xl font-bold text-[#252B42]">SRI SMS Pharma</h1>
+          <Image
+            src="/images/logo.png"
+            alt="SRI SMS Pharma Logo"
+            width={200}
+            height={50}
+            className="object-contain w-[200px] h-auto pl-4"
+          />
           <div className="space-x-8 pl-20">
             <Link href="/" className="text-gray-600 hover:text-[#23A6F0] font-semibold">Home</Link>
             <Link href="/product" className="text-gray-600 hover:text-[#23A6F0] font-semibold">Product</Link>
@@ -28,16 +34,13 @@ export default function Contact() {
         </nav>
 
         <nav className="md:hidden relative z-20 bg-white px-6 py-4 flex items-center justify-between">
-          <div className="flex justify-start absolute left-0 top-0 z-10">
-            <Image
-              src="/images/left.png"
-              alt="Logo Icon"
-              width={64}
-              height={64}
-              className="h-20 w-10"
-            />
-          </div>
-          <h1 className="text-xl font-bold text-[#252B42] pl-5">SRI SMS Pharma</h1>
+          <Image
+            src="/images/logo.png"
+            alt="SRI SMS Pharma Logo"
+            width={200}
+            height={50}
+            className="object-contain w-[200px] h-auto "
+          />
 
           {/* Hamburger Button */}
           <button onClick={() => setIsOpen(true)} className="focus:outline-none">
@@ -50,28 +53,30 @@ export default function Contact() {
         </nav>
 
         {/* Overlay Menu */}
-        {isOpen && (
-          <>
-            <div className="md:hidden fixed h-60 ml-7 inset-0 z-40 bg-white px-6 py-6 flex flex-col gap-6">
-              {/* Close Button */}
-              <button onClick={() => setIsOpen(false)} className="absolute top-8 right-10">
-                <div className="w-6 h-6 relative">
-                  <span className="absolute w-6 h-0.5 bg-black rotate-45 origin-center" />
-                  <span className="absolute w-6 h-0.5 bg-black -rotate-45 origin-center" />
+         {isOpen && (
+                <div className="md:hidden fixed inset-0 z-40">
+                  <div
+                    className="absolute inset-0 backdrop-blur-sm bg-black/10"
+                    onClick={() => setIsOpen(false)}
+                  />
+      
+                  <div className="absolute right-0 z-50 bg-white px-6 py-6 w-full max-w-xs shadow-lg">
+                    <button onClick={() => setIsOpen(false)} className="absolute top-10 right-10">
+                      <div className="w-6 h-6 relative">
+                        <span className="absolute w-6 h-0.5 bg-black rotate-45 origin-center" />
+                        <span className="absolute w-6 h-0.5 bg-black -rotate-45 origin-center" />
+                      </div>
+                    </button>
+      
+                    {/* Menu Items */}
+                    <div className="mt-10 flex flex-col gap-4">
+                      <Link href="/" className="text-gray-600 hover:text-[#23A6F0] font-semibold">Home</Link>
+                      <Link href="/product" className="text-[#23A6F0] font-semibold">Product</Link>
+                      <Link href="/contact" className="text-gray-600 hover:text-[#23A6F0] font-semibold">Contact</Link>
+                    </div>
+                  </div>
                 </div>
-              </button>
-
-              {/* Menu Items */}
-              <div className="mt-10 flex flex-col gap-4">
-                <Link href="/" className="text-gray-600 hover:text-[#23A6F0] font-semibold">Home</Link>
-                <Link href="/product" className="text-gray-600  hover:text-[#23A6F0] font-semibold">Product</Link>
-                <Link href="/contact" className="text-[#23A6F0] font-semibold">Contact</Link>
-              </div>
-            </div>
-            <div className="md:hidden bg-black opacity-30 h-[100vh] w-[100vh] z-39 fixed top-0">
-            </div>
-          </>
-        )}
+              )}
 
         {/* Main */}
         <main
@@ -146,12 +151,12 @@ export default function Contact() {
         </main>
 
         {/* Footer */}
-        <footer className="bg-blue-500 text-white py-6 text-center font-sans">
-          <h2 className="text-lg font-semibold mb-2 ">MedicalFunc</h2>
+         <footer className="bg-[#23A6F0] text-white py-6 text-center">
+          <h2 className="text-lg font-semibold mb-2">SRI SMS PHARMA</h2>
           <nav className="space-x-6">
-            <Link href="/" className="hover:underline">Home</Link>
-            <Link href="/product" className="hover:underline">Products</Link>
-            <Link href="/contact" className="hover:underline">Contact</Link>
+            <Link href="/" >Home</Link>
+            <Link href="/product">Products</Link>
+            <Link href="/contact">Contact</Link>
           </nav>
         </footer>
       </div>

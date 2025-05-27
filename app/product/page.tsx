@@ -21,82 +21,89 @@ export default function Product() {
       </Head>
 
       <div className="relative min-h-screen bg-white max-w-[1360px] mx-auto font-sans">
-        <div className="flex justify-start absolute left-0 top-0 z-10">
-          <Image
-            src="/images/left.png"
-            alt="Logo Icon"
-            width={64}
-            height={64}
-            className="h-16 w-auto"
-          />
-        </div>
-        <div className="hidden sm:block absolute right-0 top-0 z-10">
-          <Image
-            src="/images/asset1.svg"
-            alt="Decorative Background"
-            width={600}
-            height={500}
-            className="w-[500px] h-auto"
-          />
-        </div>
-
-        <nav className="hidden md:flex relative z-0 items-center px-10 py-6 bg-white">
-          <h1 className="text-xl font-bold text-[#252B42]">SRI SMS Pharma</h1>
-          <div className="space-x-8 pl-20">
-            <Link href="/" className="text-gray-600 hover:text-[#23A6F0] font-semibold">Home</Link>
-            <Link href="/product" className="text-[#23A6F0] font-semibold">Product</Link>
-            <Link href="/contact" className="text-gray-600 hover:text-[#23A6F0] font-semibold">Contact</Link>
-          </div>
-        </nav>
-
-        <nav className="md:hidden relative z-20 bg-white px-6 py-4 flex items-center justify-between">
-          <div className="flex justify-start absolute left-0 top-0 z-10">
-            <Image
-              src="/images/left.png"
-              alt="Logo Icon"
-              width={64}
-              height={64}
-              className="h-16 w-auto"
-            />
-          </div>
-          <h1 className="text-xl font-bold text-[#252B42] pl-5">SRI SMS Pharma</h1>
-
-          {/* Hamburger Button */}
-          <button onClick={() => setIsOpen(true)} className="focus:outline-none">
-            <div className="space-y-1">
-              <div className="w-6 h-0.5 bg-black" />
-              <div className="w-6 h-0.5 bg-black" />
-              <div className="w-6 h-0.5 bg-black" />
-            </div>
-          </button>
-        </nav>
-
-        {/* Overlay Menu */}
-        {isOpen && (
-          <>
-            <div className="md:hidden fixed h-60 ml-7 inset-0 z-40 bg-white px-6 py-6 flex flex-col gap-6">
-              {/* Close Button */}
-              <button onClick={() => setIsOpen(false)} className="absolute top-8 right-10">
-                <div className="w-6 h-6 relative">
-                  <span className="absolute w-6 h-0.5 bg-black rotate-45 origin-center" />
-                  <span className="absolute w-6 h-0.5 bg-black -rotate-45 origin-center" />
-                </div>
-              </button>
-
-              {/* Menu Items */}
-              <div className="mt-10 flex flex-col gap-4">
-                <Link href="/" className="text-gray-600 hover:text-[#23A6F0] font-semibold">Home</Link>
-                <Link href="/product" className=" text-[#23A6F0] font-semibold">Product</Link>
-                <Link href="/contact" className="text-gray-600 hover:text-[#23A6F0] font-semibold">Contact</Link>
+       <div className="hidden sm:flex justify-start absolute left-0 top-0 z-10">
+                <Image
+                  src="/images/left.png"
+                  alt="Logo Icon"
+                  width={64}
+                  height={64}
+                  className="h-16 w-auto"
+                />
               </div>
-            </div>
-            <div className="md:hidden bg-black opacity-30 h-[100vh] w-[100vh] z-39 fixed top-0">
-            </div>
-          </>
-        )}
+              <div className="hidden sm:block absolute right-0 top-0 z-10">
+                <Image
+                  src="/images/asset1.svg"
+                  alt="Decorative Background"
+                  width={600}
+                  height={500}
+                  className="w-[500px] h-auto"
+                />
+              </div>
+      
+              <nav className="hidden md:flex relative z-0 items-center px-10 py-6 bg-white">
+                <Image
+                  src="/images/logo.png"
+                  alt="SRI SMS Pharma Logo"
+                  width={200}
+                  height={50}
+                  className="object-contain w-[200px] h-auto "
+                />
+      
+                <div className="space-x-8 pl-20">
+                  <Link href="/" className="text-gray-600 hover:text-[#23A6F0] font-semibold">Home</Link>
+                  <Link href="/product" className="text-[#23A6F0] font-semibold">Product</Link>
+                  <Link href="/contact" className="text-gray-600 hover:text-[#23A6F0] font-semibold">Contact</Link>
+                </div>
+              </nav>
+      
+              <nav className="md:hidden relative z-20 bg-white px-6 py-4 flex items-center justify-between">
+               <Image
+                  src="/images/logo.png"
+                  alt="SRI SMS Pharma Logo"
+                  width={200}
+                  height={50}
+                  className="object-contain w-[200px] h-auto"
+                />
+      
+      
+                {/* Hamburger Button */}
+                <button onClick={() => setIsOpen(true)} className="focus:outline-none">
+                  <div className="space-y-1">
+                    <div className="w-6 h-0.5 bg-black" />
+                    <div className="w-6 h-0.5 bg-black" />
+                    <div className="w-6 h-0.5 bg-black" />
+                  </div>
+                </button>
+              </nav>
+      
+              {/* Overlay Menu */}
+              {isOpen && (
+                <div className="md:hidden fixed inset-0 z-40">
+                  <div
+                    className="absolute inset-0 backdrop-blur-sm bg-black/10"
+                    onClick={() => setIsOpen(false)}
+                  />
+      
+                  <div className="absolute right-0 z-50 bg-white px-6 py-6 w-full max-w-xs shadow-lg">
+                    <button onClick={() => setIsOpen(false)} className="absolute top-10 right-10">
+                      <div className="w-6 h-6 relative">
+                        <span className="absolute w-6 h-0.5 bg-black rotate-45 origin-center" />
+                        <span className="absolute w-6 h-0.5 bg-black -rotate-45 origin-center" />
+                      </div>
+                    </button>
+      
+                    {/* Menu Items */}
+                    <div className="mt-10 flex flex-col gap-4">
+                      <Link href="/" className="text-gray-600 hover:text-[#23A6F0] font-semibold">Home</Link>
+                      <Link href="/product" className="text-[#23A6F0] font-semibold">Product</Link>
+                      <Link href="/contact" className="text-gray-600 hover:text-[#23A6F0] font-semibold">Contact</Link>
+                    </div>
+                  </div>
+                </div>
+              )}
 
         {/* first */}
-        <div className="relative z-10 grid grid-cols-1 md:grid-cols-12 items-center sm:px-10 px-5 rounded-bl-[80px] rounded-tr-[80px] min-h-[520px]">
+        <div className="relative z-10 grid grid-cols-1 md:grid-cols-12 items-center sm:px-10 px-5 rounded-bl-[80px] rounded-tr-[80px] sm:min-h-[520px]">
           {/* Wrapper with border and rounded corners on mobile only */}
           <div className="md:col-span-12 md:grid md:grid-cols-12 md:gap-0 gap-6 border border-gray-300 rounded-[40px] p-4 md:border-none md:rounded-none md:p-0 flex flex-col md:flex-row">
 
@@ -106,8 +113,8 @@ export default function Product() {
                 <Swiper
                   modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                   navigation={{
-                    nextEl: ".solution-swiper-next",
-                    prevEl: ".solution-swiper-prev",
+                    nextEl: ".Hyalomoist-swiper-next",
+                    prevEl: ".Hyalomoist-swiper-prev",
                   }}
                   pagination={{ clickable: true }}
                   autoplay={{ delay: 3000, disableOnInteraction: false }}
@@ -176,14 +183,14 @@ export default function Product() {
 
                 {/* Navigation Buttons */}
                 <button
-                  className="hidden sm:block solution-swiper-prev bg-white shadow-md rounded-full p-2 absolute left-2 top-1/2 -translate-y-1/2 z-10"
+                  className="hidden sm:block Hyalomoist-swiper-prev bg-white shadow-md rounded-full p-2 absolute left-2 top-1/2 -translate-y-1/2 z-10"
                   aria-label="Previous Section"
                 >
                   <FaChevronLeft className="text-black w-5 h-5 sm:w-6 sm:h-6" />
                 </button>
 
                 <button
-                  className="hidden sm:block solution-swiper-next bg-white shadow-md rounded-full p-2 absolute right-2 top-1/2 -translate-y-1/2 z-10"
+                  className="hidden sm:block Hyalomoist-swiper-next bg-white shadow-md rounded-full p-2 absolute right-2 top-1/2 -translate-y-1/2 z-10"
                   aria-label="Next Section"
                 >
                   <FaChevronRight className="text-black w-5 h-5 sm:w-6 sm:h-6" />
@@ -195,9 +202,9 @@ export default function Product() {
             {/* Text Section */}
             <div className="md:col-span-6 flex justify-start sm:pl-20 self-start h-full w-full text-center md:text-left order-2 md:order-1">
               <div className="w-full max-w-md flex flex-col justify-center h-full">
-                <p className="text-[#23A6F0] font-bold text-2xl mb-4">Hyalomoist Eyedrops</p>
+                <p className="text-[#23A6F0] font-bold text-left text-xl sm:text-2xl mb-2 sm:mb-4">Hyalomoist Eyedrops</p>
                 {/* <p className="text-[#252B42] font-bold text-4xl leading-tight">LOTENATE</p> */}
-                <p className="text-black font-medium text-base leading-relaxed font-sans">
+                <p className="text-black font-normal text-left text-sm sm:text-base leading-relaxed font-sans">
                   Hyalomoist eyedrops are primarily used to relieve dry eye symptoms by lubricating and moistening the eyes. They canals oprotect the eyes from irritations caused by factors like
                   contactlenses and dry air,and provide relief after eye injuries like corneal abrasions..
                 </p>
@@ -313,9 +320,9 @@ export default function Product() {
 
           <div className="md:col-span-6 flex justify-start self-start h-full">
             <div className="w-full max-w-md flex flex-col justify-center h-full">
-              <p className="text-[#23A6F0] font-bold text-2xl mb-4">Moispro Eyedrops</p>
+              <p className="text-[#23A6F0] font-bold text-left text-2xl mb-4">Moispro Eyedrops</p>
               {/* <p className="text-[#252B42] font-bold text-4xl leading-tight">LOTENATE</p> */}
-              <p className="text-black font-medium text-base leading-relaxed font-sans">
+              <p className="text-black font-normal text-left text-base leading-relaxed font-sans">
                 Moispro Eye Drop is a lubricating solution intended for temporary relief from eye irritation, burning, stinging, and grittiness, often caused by dry eyes. Its active ingredients are Polyethylene Glycol 400 and Propylene Glycol, which help moisturize and soothe the eyes.
               </p>
             </div>
@@ -396,10 +403,10 @@ export default function Product() {
             </div>
 
             {/* Text Section Below Slider */}
-            <div className="mt-4 text-center">
-              <p className="text-[#23A6F0] font-bold text-2xl mb-2">Moispro Eyedrops</p>
+            <div className="mt-4 text-left">
+              <p className="text-[#23A6F0] font-bold text-xl mb-2">Moispro Eyedrops</p>
               {/* <p className="text-[#252B42] font-bold text-3xl leading-tight">LOTENATE</p> */}
-              <p className="text-black font-medium text-base leading-relaxed mt-2">
+              <p className="text-black font-normal text-sm leading-relaxed mt-2">
                 Moispro Eye Drop is a lubricating solution intended for temporary relief from eye irritation, burning, stinging, and grittiness, often caused by dry eyes. Its active ingredients are Polyethylene Glycol 400 and Propylene Glycol, which help moisturize and soothe the eyes.
               </p>
             </div>
@@ -411,7 +418,7 @@ export default function Product() {
             <div className="w-full max-w-md flex flex-col justify-center h-full">
               <p className="text-[#23A6F0] font-bold text-2xl mb-4 font-sans">Moxflu Eyedrops</p>
               {/* <p className="text-[#252B42] font-bold text-4xl leading-tight">LOTENATE</p> */}
-              <p className="text-black font-medium text-base leading-relaxed font-sans">
+              <p className="text-black font-normal text-base leading-relaxed font-sans">
                 Moxflu Eye Drop is an antibiotic, used in the treatment of bacterial infections of the eye. It relieves the symptoms of the infection by stopping the further growth of the causative microorganisms.
               </p>
             </div>
@@ -435,8 +442,8 @@ export default function Product() {
                 <Swiper
                   modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                   navigation={{
-                    nextEl: ".solution-swiper-next",
-                    prevEl: ".solution-swiper-prev",
+                    nextEl: ".moxflu-swiper-next",
+                    prevEl: ".moxflu-swiper-prev",
                   }}
                   pagination={{ clickable: true }}
                   autoplay={{ delay: 3000, disableOnInteraction: false }}
@@ -472,14 +479,14 @@ export default function Product() {
 
               {/* Navigation Buttons */}
               <button
-                className="solution-swiper-prev bg-white shadow-md rounded-full p-2 absolute left-2 top-1/2 -translate-y-1/2 z-10"
+                className="moxflu-swiper-prev bg-white shadow-md rounded-full p-2 absolute left-2 top-1/2 -translate-y-1/2 z-10"
                 aria-label="Previous Section"
               >
                 <FaChevronLeft className="text-black w-5 h-5 sm:w-6 sm:h-6" />
               </button>
 
               <button
-                className="solution-swiper-next bg-white shadow-md rounded-full p-2 absolute right-2 top-1/2 -translate-y-1/2 z-10"
+                className="moxflu-swiper-next bg-white shadow-md rounded-full p-2 absolute right-2 top-1/2 -translate-y-1/2 z-10"
                 aria-label="Next Section"
               >
                 <FaChevronRight className="text-black w-5 h-5 sm:w-6 sm:h-6" />
@@ -564,10 +571,10 @@ export default function Product() {
             </div>
 
             {/* Text Section Below Slider */}
-            <div className="mt-4 text-center">
-              <p className="text-[#23A6F0] font-bold text-2xl mb-4">Moxflu Eyedrops</p>
+            <div className="mt-4 text-left">
+              <p className="text-[#23A6F0] font-bold text-xl mb-4">Moxflu Eyedrops</p>
               {/* <p className="text-[#252B42] font-bold text-4xl leading-tight">LOTENATE</p> */}
-              <p className="text-black font-medium text-base leading-relaxed font-sans">
+              <p className="text-black font-normal text-sm leading-relaxed font-sans">
                 Moxflu Eye Drop is an antibiotic, used in the treatment of bacterial infections of the eye. It relieves the symptoms of the infection by stopping the further growth of the causative microorganisms.
               </p>
             </div>
@@ -589,8 +596,8 @@ export default function Product() {
                 <Swiper
                   modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                   navigation={{
-                    nextEl: ".solution-swiper-next",
-                    prevEl: ".solution-swiper-prev",
+                    nextEl: ".moxflu_LP-swiper-next",
+                    prevEl: ".moxflu_LP-swiper-prev",
                   }}
                   pagination={{ clickable: true }}
                   autoplay={{ delay: 3000, disableOnInteraction: false }}
@@ -661,14 +668,14 @@ export default function Product() {
               <div className="custom-service-pagination flex justify-center mt-4"></div>
               <div className="flex justify-center gap-4">
                 <button
-                  className="solution-swiper-prev bg-white shadow-md rounded-full p-2 absolute left-2 top-1/2 -translate-y-1/2 z-10"
+                  className="moxflu_LP-swiper-prev bg-white shadow-md rounded-full p-2 absolute left-2 top-1/2 -translate-y-1/2 z-10"
                   aria-label="Previous Section"
                 >
                   <FaChevronLeft className="text-black w-5 h-5 sm:w-6 sm:h-6" />
                 </button>
 
                 <button
-                  className="solution-swiper-next bg-white shadow-md rounded-full p-2 absolute right-2 top-1/2 -translate-y-1/2 z-10"
+                  className="moxflu_LP-swiper-next bg-white shadow-md rounded-full p-2 absolute right-2 top-1/2 -translate-y-1/2 z-10"
                   aria-label="Next Section"
                 >
                   <FaChevronRight className="text-black w-5 h-5 sm:w-6 sm:h-6" />
@@ -683,7 +690,7 @@ export default function Product() {
             <div className="w-full max-w-md flex flex-col justify-center h-full">
               <p className="text-[#23A6F0] font-bold text-2xl mb-4 font-sans">Moxflu-LP Eyedrops</p>
               {/* <p className="text-[#252B42] font-bold text-4xl leading-tight">LOTENATE</p> */}
-              <p className="text-black font-medium text-base leading-relaxed font-sans">
+              <p className="text-black font-normal text-base leading-relaxed font-sans">
                 Moxflu-LP Eye Drop is a prescription medicine used to treat eye infection with inflammation. It kills and stops the growth of bacteria and helps in relieving symptoms such as redness, itching, and swelling.
               </p>
             </div>
@@ -765,10 +772,10 @@ export default function Product() {
             </div>
 
             {/* Text Section Below Slider */}
-            <div className="mt-4 text-center">
-              <p className="text-[#23A6F0] font-bold text-2xl mb-2 font-sans">Moxflu-LP Eyedrops</p>
+            <div className="mt-4 text-left">
+              <p className="text-[#23A6F0] font-bold text-xl mb-2 font-sans">Moxflu-LP Eyedrops</p>
               {/* <p className="text-[#252B42] font-bold text-3xl leading-tight">LOTENATE</p> */}
-              <p className="text-black font-medium text-base leading-relaxed mt-2 font-sans">
+              <p className="text-black font-normal text-sm leading-relaxed mt-2 font-sans">
                 Moxflu-LP Eye Drop is a prescription medicine used to treat eye infection with inflammation. It kills and stops the growth of bacteria and helps in relieving symptoms such as redness, itching, and swelling.
               </p>
             </div>
@@ -783,7 +790,7 @@ export default function Product() {
             <div className="w-full max-w-md flex flex-col justify-center h-full">
               <p className="text-[#23A6F0] font-bold text-2xl mb-4 font-sans">Nepain Eyedrops</p>
               {/* <p className="text-[#252B42] font-bold text-4xl leading-tight">LOTENATE</p> */}
-              <p className="text-black font-medium text-base leading-relaxed font-sans">
+              <p className="text-black font-normal text-base leading-relaxed font-sans">
                 Nepain Eye Drop Nepafenac eye drops are used to relieve pain and inflammation in the eyes, particularly after cataract surgery. These drops are a non-steroidal anti-inflammatory drug (NSAID) that work by blocking the release of chemical messengers that cause pain and inflammation. They are also used to help prevent swelling in the eye after surgery.
               </p>
             </div>
@@ -807,8 +814,8 @@ export default function Product() {
                 <Swiper
                   modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                   navigation={{
-                    nextEl: ".solution-swiper-next",
-                    prevEl: ".solution-swiper-prev",
+                    nextEl: ".nepain-swiper-next",
+                    prevEl: ".nepain-swiper-prev",
                   }}
                   pagination={{ clickable: true }}
                   autoplay={{ delay: 3000, disableOnInteraction: false }}
@@ -844,14 +851,14 @@ export default function Product() {
 
               {/* Navigation Buttons */}
               <button
-                className="solution-swiper-prev bg-white shadow-md rounded-full p-2 absolute left-2 top-1/2 -translate-y-1/2 z-10"
+                className="nepain-swiper-prev bg-white shadow-md rounded-full p-2 absolute left-2 top-1/2 -translate-y-1/2 z-10"
                 aria-label="Previous Section"
               >
                 <FaChevronLeft className="text-black w-5 h-5 sm:w-6 sm:h-6" />
               </button>
 
               <button
-                className="solution-swiper-next bg-white shadow-md rounded-full p-2 absolute right-2 top-1/2 -translate-y-1/2 z-10"
+                className="nepain-swiper-next bg-white shadow-md rounded-full p-2 absolute right-2 top-1/2 -translate-y-1/2 z-10"
                 aria-label="Next Section"
               >
                 <FaChevronRight className="text-black w-5 h-5 sm:w-6 sm:h-6" />
@@ -936,10 +943,10 @@ export default function Product() {
             </div>
 
             {/* Text Section Below Slider */}
-            <div className="mt-4 text-center">
-              <p className="text-[#23A6F0] font-bold text-2xl mb-4">Nepain Eyedrops</p>
+            <div className="mt-4 text-left">
+              <p className="text-[#23A6F0] font-bold text-xl mb-4">Nepain Eyedrops</p>
               {/* <p className="text-[#252B42] font-bold text-4xl leading-tight">LOTENATE</p> */}
-              <p className="text-black font-medium text-base leading-relaxed font-sans">
+              <p className="text-black font-normal text-sm leading-relaxed font-sans">
                 Nepain Eye Drop Nepafenac eye drops are used to relieve pain and inflammation in the eyes, particularly after cataract surgery. These drops are a non-steroidal anti-inflammatory drug (NSAID) that work by blocking the release of chemical messengers that cause pain and inflammation. They are also used to help prevent swelling in the eye after surgery.
               </p>
             </div>
@@ -961,8 +968,8 @@ export default function Product() {
                 <Swiper
                   modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                   navigation={{
-                    nextEl: ".solution-swiper-next",
-                    prevEl: ".solution-swiper-prev",
+                    nextEl: ".nepain_PF-swiper-next",
+                    prevEl: ".nepain_PF-swiper-prev",
                   }}
                   pagination={{ clickable: true }}
                   autoplay={{ delay: 3000, disableOnInteraction: false }}
@@ -1033,14 +1040,14 @@ export default function Product() {
               <div className="custom-service-pagination flex justify-center mt-4"></div>
               <div className="flex justify-center gap-4">
                 <button
-                  className="solution-swiper-prev bg-white shadow-md rounded-full p-2 absolute left-2 top-1/2 -translate-y-1/2 z-10"
+                  className="nepain_PF-swiper-prev bg-white shadow-md rounded-full p-2 absolute left-2 top-1/2 -translate-y-1/2 z-10"
                   aria-label="Previous Section"
                 >
                   <FaChevronLeft className="text-black w-5 h-5 sm:w-6 sm:h-6" />
                 </button>
 
                 <button
-                  className="solution-swiper-next bg-white shadow-md rounded-full p-2 absolute right-2 top-1/2 -translate-y-1/2 z-10"
+                  className="nepain_PF-swiper-next bg-white shadow-md rounded-full p-2 absolute right-2 top-1/2 -translate-y-1/2 z-10"
                   aria-label="Next Section"
                 >
                   <FaChevronRight className="text-black w-5 h-5 sm:w-6 sm:h-6" />
@@ -1055,7 +1062,7 @@ export default function Product() {
             <div className="w-full max-w-md flex flex-col justify-center h-full">
               <p className="text-[#23A6F0] font-bold text-2xl mb-4 font-sans">Nepain-PF Eyedrops</p>
               {/* <p className="text-[#252B42] font-bold text-4xl leading-tight">LOTENATE</p> */}
-              <p className="text-black font-medium text-base leading-relaxed font-sans">
+              <p className="text-black font-normal text-base leading-relaxed font-sans">
                 Nepain-PF Eye Drop BAK Free is a pain relieving medicine used to treat pain and inflammation associated with cataract surgery. It blocks and reduces the release of certain chemicals in
                 53%
                 +
@@ -1142,10 +1149,10 @@ export default function Product() {
             </div>
 
             {/* Text Section Below Slider */}
-            <div className="mt-4 text-center">
-              <p className="text-[#23A6F0] font-bold text-2xl mb-2">Nepain-PF Eyedrops</p>
+            <div className="mt-4 text-left">
+              <p className="text-[#23A6F0] font-bold text-xl mb-2">Nepain-PF Eyedrops</p>
               {/* <p className="text-[#252B42] font-bold text-3xl leading-tight">LOTENATE</p> */}
-              <p className="text-black font-medium text-base leading-relaxed mt-2">
+              <p className="text-black font-normal text-sm leading-relaxed mt-2">
                 Nepain-PF Eye Drop BAK Free is a pain relieving medicine used to treat pain and inflammation associated with cataract surgery. It blocks and reduces the release of certain chemicals in
                 53%
                 +
@@ -1166,7 +1173,7 @@ export default function Product() {
             <div className="w-full max-w-md flex flex-col justify-center h-full">
               <p className="text-[#23A6F0] font-bold text-2xl mb-4 font-sans">Cellmoist0.5% Eyedrops</p>
               {/* <p className="text-[#252B42] font-bold text-4xl leading-tight">LOTENATE</p> */}
-              <p className="text-black font-medium text-base leading-relaxed font-sans">
+              <p className="text-black font-normal text-base leading-relaxed font-sans">
                 Cellmoist 0.5% Eye Drop is an eye lubricant or artificial tears used to relieve dry eyes. This can happen because not enough tears are made to keep the eye lubricated. It helps to soothe the irritation and burning seen in dry eyes by maintaining proper lubrication of the eyes.
               </p>
             </div>
@@ -1190,8 +1197,8 @@ export default function Product() {
                 <Swiper
                   modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                   navigation={{
-                    nextEl: ".solution-swiper-next",
-                    prevEl: ".solution-swiper-prev",
+                    nextEl: ".cellmoist-swiper-next",
+                    prevEl: ".cellmoist-swiper-prev",
                   }}
                   pagination={{ clickable: true }}
                   autoplay={{ delay: 3000, disableOnInteraction: false }}
@@ -1227,14 +1234,14 @@ export default function Product() {
 
               {/* Navigation Buttons */}
               <button
-                className="solution-swiper-prev bg-white shadow-md rounded-full p-2 absolute left-2 top-1/2 -translate-y-1/2 z-10"
+                className="cellmoist-swiper-prev bg-white shadow-md rounded-full p-2 absolute left-2 top-1/2 -translate-y-1/2 z-10"
                 aria-label="Previous Section"
               >
                 <FaChevronLeft className="text-black w-5 h-5 sm:w-6 sm:h-6" />
               </button>
 
               <button
-                className="solution-swiper-next bg-white shadow-md rounded-full p-2 absolute right-2 top-1/2 -translate-y-1/2 z-10"
+                className="cellmoist-swiper-next bg-white shadow-md rounded-full p-2 absolute right-2 top-1/2 -translate-y-1/2 z-10"
                 aria-label="Next Section"
               >
                 <FaChevronRight className="text-black w-5 h-5 sm:w-6 sm:h-6" />
@@ -1319,10 +1326,10 @@ export default function Product() {
             </div>
 
             {/* Text Section Below Slider */}
-            <div className="mt-4 text-center">
-              <p className="text-[#23A6F0] font-bold text-2xl mb-4">Cellmoist0.5% Eyedrops</p>
+            <div className="mt-4 text-left">
+              <p className="text-[#23A6F0] font-bold text-xl mb-4">Cellmoist0.5% Eyedrops</p>
               {/* <p className="text-[#252B42] font-bold text-4xl leading-tight">LOTENATE</p> */}
-              <p className="text-black font-medium text-base leading-relaxed font-sans">
+              <p className="text-black font-normal text-sm leading-relaxed font-sans">
                 Cellmoist 0.5% Eye Drop is an eye lubricant or artificial tears used to relieve dry eyes. This can happen because not enough tears are made to keep the eye lubricated. It helps to soothe the irritation and burning seen in dry eyes by maintaining proper lubrication of the eyes.
               </p>
             </div>
@@ -1344,8 +1351,8 @@ export default function Product() {
                 <Swiper
                   modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                   navigation={{
-                    nextEl: ".solution-swiper-next",
-                    prevEl: ".solution-swiper-prev",
+                    nextEl: ".cellmoists-swiper-next",
+                    prevEl: ".cellmoists-swiper-prev",
                   }}
                   pagination={{ clickable: true }}
                   autoplay={{ delay: 3000, disableOnInteraction: false }}
@@ -1416,14 +1423,14 @@ export default function Product() {
               <div className="custom-service-pagination flex justify-center mt-4"></div>
               <div className="flex justify-center gap-4">
                 <button
-                  className="solution-swiper-prev bg-white shadow-md rounded-full p-2 absolute left-2 top-1/2 -translate-y-1/2 z-10"
+                  className="cellmoists-swiper-prev bg-white shadow-md rounded-full p-2 absolute left-2 top-1/2 -translate-y-1/2 z-10"
                   aria-label="Previous Section"
                 >
                   <FaChevronLeft className="text-black w-5 h-5 sm:w-6 sm:h-6" />
                 </button>
 
                 <button
-                  className="solution-swiper-next bg-white shadow-md rounded-full p-2 absolute right-2 top-1/2 -translate-y-1/2 z-10"
+                  className="cellmoists-swiper-next bg-white shadow-md rounded-full p-2 absolute right-2 top-1/2 -translate-y-1/2 z-10"
                   aria-label="Next Section"
                 >
                   <FaChevronRight className="text-black w-5 h-5 sm:w-6 sm:h-6" />
@@ -1438,7 +1445,7 @@ export default function Product() {
             <div className="w-full max-w-md flex flex-col justify-center h-full">
               <p className="text-[#23A6F0] font-bold text-2xl mb-4 font-sans">Cellmoist 1% Eyedrops</p>
               {/* <p className="text-[#252B42] font-bold text-4xl leading-tight">LOTENATE</p> */}
-              <p className="text-black font-medium text-base leading-relaxed font-sans">
+              <p className="text-black font-normal text-base leading-relaxed font-sans">
                 Cellmoist 1% is used as a lubricant to relive irritation and discomfort due to dryness of the eyes or due to exposure of the eyes to wind or sun. Carboxymethylcellulose is a lubricant. It works similar to natural tears and provides temporary relief from burning and discomfort due to dryness of the eye.
               </p>
             </div>
@@ -1520,10 +1527,10 @@ export default function Product() {
             </div>
 
             {/* Text Section Below Slider */}
-            <div className="mt-4 text-center">
-              <p className="text-[#23A6F0] font-bold text-2xl mb-2">Cellmoist 1% Eyedrops</p>
+            <div className="mt-4 text-left">
+              <p className="text-[#23A6F0] font-bold text-xl mb-2">Cellmoist 1% Eyedrops</p>
               {/* <p className="text-[#252B42] font-bold text-3xl leading-tight">LOTENATE</p> */}
-              <p className="text-black font-medium text-base leading-relaxed mt-2">
+              <p className="text-black font-normal text-sm leading-relaxed mt-2">
                 Cellmoist 1% is used as a lubricant to relive irritation and discomfort due to dryness of the eyes or due to exposure of the eyes to wind or sun. Carboxymethylcellulose is a lubricant. It works similar to natural tears and provides temporary relief from burning and discomfort due to dryness of the eye.
               </p>
             </div>
@@ -1539,7 +1546,7 @@ export default function Product() {
             <div className="w-full max-w-md flex flex-col justify-center h-full">
               <p className="text-[#23A6F0] font-bold text-2xl mb-4 font-sans">HyalomoistTG Eyedrops</p>
               {/* <p className="text-[#252B42] font-bold text-4xl leading-tight">LOTENATE</p> */}
-              <p className="text-black font-medium text-base leading-relaxed font-sans">
+              <p className="text-black font-normal text-base leading-relaxed font-sans">
                 Hyalomoist TG Eye Drop is a lubricant. It is used in the treatment of dry eyes. It moistens the eyes and provides relief from discomfort and temporary burning. It also helps in treating corneal burns by forming a soothing layer that reduces irritation and protects the damaged cornea.
                 Trehalube Sodium Hyaluronate Eye Drop is a type of lubricant that helps relieve dry eyes by keeping them hydrated and comfortable. It works by forming a protective, moisture-retaining layer over the eye&#39;s surface, reducing dryness, irritation, and discomfort.
               </p>
@@ -1564,8 +1571,8 @@ export default function Product() {
                 <Swiper
                   modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                   navigation={{
-                    nextEl: ".solution-swiper-next",
-                    prevEl: ".solution-swiper-prev",
+                    nextEl: ".hyalomoist_tg-swiper-next",
+                    prevEl: ".hyalomoist_tg-swiper-prev",
                   }}
                   pagination={{ clickable: true }}
                   autoplay={{ delay: 3000, disableOnInteraction: false }}
@@ -1601,14 +1608,14 @@ export default function Product() {
 
               {/* Navigation Buttons */}
               <button
-                className="solution-swiper-prev bg-white shadow-md rounded-full p-2 absolute left-2 top-1/2 -translate-y-1/2 z-10"
+                className="hyalomoist_tg-swiper-prev bg-white shadow-md rounded-full p-2 absolute left-2 top-1/2 -translate-y-1/2 z-10"
                 aria-label="Previous Section"
               >
                 <FaChevronLeft className="text-black w-5 h-5 sm:w-6 sm:h-6" />
               </button>
 
               <button
-                className="solution-swiper-next bg-white shadow-md rounded-full p-2 absolute right-2 top-1/2 -translate-y-1/2 z-10"
+                className="hyalomoist_tg-swiper-next bg-white shadow-md rounded-full p-2 absolute right-2 top-1/2 -translate-y-1/2 z-10"
                 aria-label="Next Section"
               >
                 <FaChevronRight className="text-black w-5 h-5 sm:w-6 sm:h-6" />
@@ -1693,10 +1700,10 @@ export default function Product() {
             </div>
 
             {/* Text Section Below Slider */}
-            <div className="mt-4 text-center">
-              <p className="text-[#23A6F0] font-bold text-2xl mb-4">HyalomoistTG Eyedrops</p>
+            <div className="mt-4 text-left">
+              <p className="text-[#23A6F0] font-bold text-xl mb-4">HyalomoistTG Eyedrops</p>
               {/* <p className="text-[#252B42] font-bold text-4xl leading-tight">LOTENATE</p> */}
-              <p className="text-black font-medium text-base leading-relaxed font-sans">
+              <p className="text-black font-normal text-sm leading-relaxed font-sans">
                 Hyalomoist TG Eye Drop is a lubricant. It is used in the treatment of dry eyes. It moistens the eyes and provides relief from discomfort and temporary burning. It also helps in treating corneal burns by forming a soothing layer that reduces irritation and protects the damaged cornea.
                 Trehalube Sodium Hyaluronate Eye Drop is a type of lubricant that helps relieve dry eyes by keeping them hydrated and comfortable. It works by forming a protective, moisture-retaining layer over the eye&#39;s surface, reducing dryness, irritation, and discomfort.
               </p>
@@ -1719,8 +1726,8 @@ export default function Product() {
                 <Swiper
                   modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                   navigation={{
-                    nextEl: ".solution-swiper-next",
-                    prevEl: ".solution-swiper-prev",
+                    nextEl: ".lotenate-swiper-next",
+                    prevEl: ".lotenate-swiper-prev",
                   }}
                   pagination={{ clickable: true }}
                   autoplay={{ delay: 3000, disableOnInteraction: false }}
@@ -1791,14 +1798,14 @@ export default function Product() {
               <div className="custom-service-pagination flex justify-center mt-4"></div>
               <div className="flex justify-center gap-4">
                 <button
-                  className="solution-swiper-prev bg-white shadow-md rounded-full p-2 absolute left-2 top-1/2 -translate-y-1/2 z-10"
+                  className="lotenate-swiper-prev bg-white shadow-md rounded-full p-2 absolute left-2 top-1/2 -translate-y-1/2 z-10"
                   aria-label="Previous Section"
                 >
                   <FaChevronLeft className="text-black w-5 h-5 sm:w-6 sm:h-6" />
                 </button>
 
                 <button
-                  className="solution-swiper-next bg-white shadow-md rounded-full p-2 absolute right-2 top-1/2 -translate-y-1/2 z-10"
+                  className="lotenate-swiper-next bg-white shadow-md rounded-full p-2 absolute right-2 top-1/2 -translate-y-1/2 z-10"
                   aria-label="Next Section"
                 >
                   <FaChevronRight className="text-black w-5 h-5 sm:w-6 sm:h-6" />
@@ -1813,7 +1820,7 @@ export default function Product() {
             <div className="w-full max-w-md flex flex-col justify-center h-full">
               <p className="text-[#23A6F0] font-bold text-2xl mb-4 font-sans">Lotenate0.5% Eyedrops</p>
               {/* <p className="text-[#252B42] font-bold text-4xl leading-tight">LOTENATE</p> */}
-              <p className="text-black font-medium text-base leading-relaxed font-sans">
+              <p className="text-black font-normal text-base leading-relaxed font-sans">
                 Lotenate 0.5% Eye Drop helps relieve symptoms such as pain, redness, swelling, itching and watering of eyes due to an infection or allergy. This medicine works by decreasing the production of certain chemicals that cause inflammation of the eyes.
               </p>
             </div>
@@ -1895,10 +1902,10 @@ export default function Product() {
             </div>
 
             {/* Text Section Below Slider */}
-            <div className="mt-4 text-center">
-              <p className="text-[#23A6F0] font-bold text-2xl mb-2">Lotenate0.5% Eyedrops</p>
+            <div className="mt-4 text-left">
+              <p className="text-[#23A6F0] font-bold text-xl mb-2">Lotenate0.5% Eyedrops</p>
               {/* <p className="text-[#252B42] font-bold text-3xl leading-tight">LOTENATE</p> */}
-              <p className="text-black font-medium text-base leading-relaxed mt-2">
+              <p className="text-black font-normal text-sm leading-relaxed mt-2">
                 Lotenate 0.5% Eye Drop helps relieve symptoms such as pain, redness, swelling, itching and watering of eyes due to an infection or allergy. This medicine works by decreasing the production of certain chemicals that cause inflammation of the eyes.
               </p>
             </div>
@@ -1907,12 +1914,12 @@ export default function Product() {
 
 
 
-        <footer className="bg-blue-500 text-white py-6 text-center">
-          <h2 className="text-lg font-semibold mb-2">MedicalFunc</h2>
+       <footer className="bg-[#23A6F0] text-white py-6 text-center">
+          <h2 className="text-lg font-semibold mb-2">SRI SMS PHARMA</h2>
           <nav className="space-x-6">
-            <Link href="/" className="hover:underline">Home</Link>
-            <Link href="/product" className="hover:underline">Products</Link>
-            <Link href="contact" className="hover:underline">Contact</Link>
+            <Link href="/" >Home</Link>
+            <Link href="/product">Products</Link>
+            <Link href="/contact">Contact</Link>
           </nav>
         </footer>
 
