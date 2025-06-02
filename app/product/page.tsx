@@ -16,7 +16,7 @@ export default function Product() {
   return (
     <>
       <Head>
-        <title>SRI SMS Pharma - Welcome</title>
+        <title>Sri Sms Pharma - Welcome</title>
         <meta name="description" content="Ophthalmic pharma wholesaler in South India" />
       </Head>
 
@@ -43,7 +43,7 @@ export default function Product() {
               <nav className="hidden md:flex relative z-0 items-center px-10 py-6 bg-white">
                 <Image
                   src="/images/logo.png"
-                  alt="SRI SMS Pharma Logo"
+                  alt="Sri Sms Pharma Logo"
                   width={200}
                   height={50}
                   className="object-contain w-[200px] h-auto "
@@ -59,7 +59,7 @@ export default function Product() {
               <nav className="md:hidden relative z-20 bg-white px-6 py-4 flex items-center justify-between">
                <Image
                   src="/images/logo.png"
-                  alt="SRI SMS Pharma Logo"
+                  alt="Sri Sms Pharma Logo"
                   width={200}
                   height={50}
                   className="object-contain w-[200px] h-auto"
@@ -109,7 +109,8 @@ export default function Product() {
 
             {/* Slider Section */}
             <div className="md:col-span-6 flex items-center justify-center md:justify-center w-full order-1 md:order-2 mb-6 md:mb-0">
-              <section className="w-full relative md:bg-white md:rounded-[60px] md:shadow-lg md:p-4 max-w-[65%] sm:h-[380px] md:max-w-[400px]">
+              <section className=" w-full relative md:bg-white md:rounded-[60px] md:shadow-lg md:p-4 max-w-[65%] sm:h-[380px] md:max-w-[400px]">
+                <div className="w-full md:absolute md:top-1/2 md:left-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2">
                 <Swiper
                   modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                   navigation={{
@@ -130,7 +131,7 @@ export default function Product() {
                     <div className="flex items-center justify-center w-full" >
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
-                          alt="Hyalomoist Eyedrops"
+                          alt="Hyalomoist Eye Drops"
                           src="/images/eyeDropImages/Hyalomist_0.1/Hyalomist_0.1_1.JPG"
                           style={{ objectFit: 'contain' }}
                           fill
@@ -146,7 +147,7 @@ export default function Product() {
                         <Image
                           fill
                           src="/images/eyeDropImages/Hyalomist_0.1/Hyalomist_0.1_2.JPG"
-                          alt="Hyalomoist Eyedrops"
+                          alt="Hyalomoist Eye Drops"
                           style={{ objectFit: 'contain' }}
                           priority
                         />
@@ -159,7 +160,7 @@ export default function Product() {
                         <Image
                           fill
                           src="/images/eyeDropImages/Hyalomist_0.1/Hyalomist_0.1_3.JPG"
-                          alt="Hyalomoist Eyedrops"
+                          alt="Hyalomoist Eye Drops"
                           style={{ objectFit: 'contain' }}
                           priority
                         />
@@ -172,7 +173,7 @@ export default function Product() {
                         <Image
                           fill
                           src="/images/eyeDropImages/Hyalomist_0.1/Hyalomist_0.1_4.JPG"
-                          alt="Hyalomoist Eyedrops"
+                          alt="Hyalomoist Eye Drops"
                           style={{ objectFit: 'contain' }}
                           priority
                         />
@@ -180,7 +181,6 @@ export default function Product() {
                     </div>
                   </SwiperSlide>
                 </Swiper>
-
                 {/* Navigation Buttons */}
                 <button
                   className="hidden sm:block Hyalomoist-swiper-prev bg-white shadow-md rounded-full p-2 absolute left-2 top-1/2 -translate-y-1/2 z-10"
@@ -195,6 +195,8 @@ export default function Product() {
                 >
                   <FaChevronRight className="text-black w-5 h-5 sm:w-6 sm:h-6" />
                 </button>
+                </div>
+
 
               </section>
             </div>
@@ -202,11 +204,11 @@ export default function Product() {
             {/* Text Section */}
             <div className="md:col-span-6 flex justify-start sm:pl-20 self-start h-full w-full text-center md:text-left order-2 md:order-1">
               <div className="w-full max-w-md flex flex-col justify-center h-full">
-                <p className="text-[#23A6F0] font-bold text-left text-xl sm:text-2xl mb-2 sm:mb-4">Hyalomoist Eyedrops</p>
+                <p className="text-[#23A6F0] font-bold text-left text-xl sm:text-2xl mb-2 sm:mb-4">Hyalomoist Eye Drops</p>
                 {/* <p className="text-[#252B42] font-bold text-4xl leading-tight">LOTENATE</p> */}
                 <p className="text-black font-normal text-left text-sm sm:text-base leading-relaxed font-sans">
-                  Hyalomoist eyedrops are primarily used to relieve dry eye symptoms by lubricating and moistening the eyes. They canals oprotect the eyes from irritations caused by factors like
-                  contactlenses and dry air,and provide relief after eye injuries like corneal abrasions..
+                  Hyalomoist Eye Drops are primarily used to relieve dry eye symptoms by lubricating and moistening the eyes. They canals oprotect the eyes from irritations caused by factors like
+                  contactlenses and dry air,and provide relief after eye injuries like corneal abrasions.
                 </p>
               </div>
             </div>
@@ -246,7 +248,7 @@ export default function Product() {
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
                           src="/images/eyeDropImages/Moispro/Moispro-1.JPG"
-                          alt="Moispro Eyedrops"
+                          alt="Moispro Eye Drops"
                           fill
                           style={{ objectFit: 'contain' }}
                           priority
@@ -259,7 +261,7 @@ export default function Product() {
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
                           src="/images/eyeDropImages/Moispro/Moispro-2.JPG"
-                          alt="Moispro Eyedrops"
+                          alt="Moispro Eye Drops"
                           fill
                           style={{ objectFit: 'contain' }}
                           priority
@@ -272,7 +274,7 @@ export default function Product() {
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
                           src="/images/eyeDropImages/Moispro/Moispro-3.JPG"
-                          alt="Moispro Eyedrops"
+                          alt="Moispro Eye Drops"
                           fill
                           style={{ objectFit: 'contain' }}
                           priority
@@ -286,7 +288,7 @@ export default function Product() {
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
                           src="/images/eyeDropImages/Moispro/moispro-4.JPG"
-                          alt="Moispro Eyedrops"
+                          alt="Moispro Eye Drops"
                           fill
                           style={{ objectFit: 'contain' }}
                           priority
@@ -320,7 +322,7 @@ export default function Product() {
 
           <div className="md:col-span-6 flex justify-start self-start h-full">
             <div className="w-full max-w-md flex flex-col justify-center h-full">
-              <p className="text-[#23A6F0] font-bold text-left text-2xl mb-4">Moispro Eyedrops</p>
+              <p className="text-[#23A6F0] font-bold text-left text-2xl mb-4">Moispro Eye Drops</p>
               {/* <p className="text-[#252B42] font-bold text-4xl leading-tight">LOTENATE</p> */}
               <p className="text-black font-normal text-left text-base leading-relaxed font-sans">
                 Moispro Eye Drop is a lubricating solution intended for temporary relief from eye irritation, burning, stinging, and grittiness, often caused by dry eyes. Its active ingredients are Polyethylene Glycol 400 and Propylene Glycol, which help moisturize and soothe the eyes.
@@ -351,7 +353,7 @@ export default function Product() {
                       <Image
                         fill
                         src="/images/eyeDropImages/Moispro/Moispro-1.JPG"
-                        alt="Moispro Eyedrops"
+                        alt="Moispro Eye Drops"
                         style={{ objectFit: 'contain' }}
                         priority
                       />
@@ -363,7 +365,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/Moispro/Moispro-2.JPG"
-                        alt="Moispro Eyedrops"
+                        alt="Moispro Eye Drops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -376,7 +378,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/Moispro/Moispro-3.JPG"
-                        alt="Moispro Eyedrops"
+                        alt="Moispro Eye Drops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -389,7 +391,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/Moispro/moispro-4.JPG"
-                        alt="Moispro Eyedrops"
+                        alt="Moispro Eye Drops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -404,7 +406,7 @@ export default function Product() {
 
             {/* Text Section Below Slider */}
             <div className="mt-4 text-left">
-              <p className="text-[#23A6F0] font-bold text-xl mb-2">Moispro Eyedrops</p>
+              <p className="text-[#23A6F0] font-bold text-xl mb-2">Moispro Eye Drops</p>
               {/* <p className="text-[#252B42] font-bold text-3xl leading-tight">LOTENATE</p> */}
               <p className="text-black font-normal text-sm leading-relaxed mt-2">
                 Moispro Eye Drop is a lubricating solution intended for temporary relief from eye irritation, burning, stinging, and grittiness, often caused by dry eyes. Its active ingredients are Polyethylene Glycol 400 and Propylene Glycol, which help moisturize and soothe the eyes.
@@ -416,7 +418,7 @@ export default function Product() {
         <div className="relative z-10 hidden md:grid grid-cols-1 md:grid-cols-12 items-center pt-5 rounded-bl-[80px] rounded-tr-[80px] min-h-[520px]">
           <div className="md:col-span-6 flex justify-center self-start h-full">
             <div className="w-full max-w-md flex flex-col justify-center h-full">
-              <p className="text-[#23A6F0] font-bold text-2xl mb-4 font-sans">Moxflu Eyedrops</p>
+              <p className="text-[#23A6F0] font-bold text-2xl mb-4 font-sans">Moxflu Eye Drops</p>
               {/* <p className="text-[#252B42] font-bold text-4xl leading-tight">LOTENATE</p> */}
               <p className="text-black font-normal text-base leading-relaxed font-sans">
                 Moxflu Eye Drop is an antibiotic, used in the treatment of bacterial infections of the eye. It relieves the symptoms of the infection by stopping the further growth of the causative microorganisms.
@@ -462,7 +464,7 @@ export default function Product() {
                         <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                           <Image
                             src={`/images/eyeDropImages/moxflu/moxflu--${i}.JPG`}
-                            alt={`Moxflu Eyedrops ${i}`}
+                            alt={`Moxflu Eye Drops ${i}`}
                             fill
                             style={{ objectFit: 'contain' }}
                             priority
@@ -518,7 +520,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/moxflu/moxflu--1.JPG"
-                        alt="Moxflu Eyedrops"
+                        alt="Moxflu Eye Drops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -531,7 +533,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/moxflu/moxflu--2.JPG"
-                        alt="Moxflu Eyedrops"
+                        alt="Moxflu Eye Drops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -544,7 +546,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/moxflu/moxflu--3.JPG"
-                        alt="Moxflu Eyedrops"
+                        alt="Moxflu Eye Drops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -557,7 +559,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/moxflu/moxflu--4.JPG"
-                        alt="Moxflu Eyedrops"
+                        alt="Moxflu Eye Drops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -572,7 +574,7 @@ export default function Product() {
 
             {/* Text Section Below Slider */}
             <div className="mt-4 text-left">
-              <p className="text-[#23A6F0] font-bold text-xl mb-4">Moxflu Eyedrops</p>
+              <p className="text-[#23A6F0] font-bold text-xl mb-4">Moxflu Eye Drops</p>
               {/* <p className="text-[#252B42] font-bold text-4xl leading-tight">LOTENATE</p> */}
               <p className="text-black font-normal text-sm leading-relaxed font-sans">
                 Moxflu Eye Drop is an antibiotic, used in the treatment of bacterial infections of the eye. It relieves the symptoms of the infection by stopping the further growth of the causative microorganisms.
@@ -614,7 +616,7 @@ export default function Product() {
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
                           src="/images/eyeDropImages/moxflu_LP/moxfluLP-1.JPG"
-                          alt="Moxflu-LP Eyedrops"
+                          alt="Moxflu LP Eye Drops"
                           fill
                           style={{ objectFit: 'contain' }}
                           priority
@@ -627,7 +629,7 @@ export default function Product() {
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
                           src="/images/eyeDropImages/moxflu_LP/moxfluLP-2.JPG"
-                          alt="Moxflu-LP Eyedrops"
+                          alt="Moxflu LP Eye Drops"
                           fill
                           style={{ objectFit: 'contain' }}
                           priority
@@ -640,7 +642,7 @@ export default function Product() {
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
                           src="/images/eyeDropImages/moxflu_LP/moxfluLP-3.jpg"
-                          alt="Moxflu-LP Eyedrops"
+                          alt="Moxflu LP Eye Drops"
                           fill
                           style={{ objectFit: 'contain' }}
                           priority
@@ -654,7 +656,7 @@ export default function Product() {
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
                           src="/images/eyeDropImages/moxflu_LP/moxfluLP-4.jpg"
-                          alt="Moxflu-LP Eyedrops"
+                          alt="Moxflu LP Eye Drops"
                           fill
                           style={{ objectFit: 'contain' }}
                           priority
@@ -688,10 +690,10 @@ export default function Product() {
 
           <div className="md:col-span-6 flex justify-start self-start h-full">
             <div className="w-full max-w-md flex flex-col justify-center h-full">
-              <p className="text-[#23A6F0] font-bold text-2xl mb-4 font-sans">Moxflu-LP Eyedrops</p>
+              <p className="text-[#23A6F0] font-bold text-2xl mb-4 font-sans">Moxflu LP Eye Drops</p>
               {/* <p className="text-[#252B42] font-bold text-4xl leading-tight">LOTENATE</p> */}
               <p className="text-black font-normal text-base leading-relaxed font-sans">
-                Moxflu-LP Eye Drop is a prescription medicine used to treat eye infection with inflammation. It kills and stops the growth of bacteria and helps in relieving symptoms such as redness, itching, and swelling.
+                Moxflu LP Eye Drop is a prescription medicine used to treat eye infection with inflammation. It kills and stops the growth of bacteria and helps in relieving symptoms such as redness, itching, and swelling.
               </p>
             </div>
           </div>
@@ -720,7 +722,7 @@ export default function Product() {
                       <Image
                         fill
                         src="/images/eyeDropImages/moxflu_LP/moxfluLP-1.JPG"
-                        alt="Moxflu-LP Eyedrops"
+                        alt="Moxflu LP Eye Drops"
                         style={{ objectFit: 'contain' }}
                         priority
                       />
@@ -733,7 +735,7 @@ export default function Product() {
                       <Image
                         fill
                         src="/images/eyeDropImages/moxflu_LP/moxfluLP-2.JPG"
-                        alt="Moxflu-LP Eyedrops"
+                        alt="Moxflu LP Eye Drops"
                         style={{ objectFit: 'contain' }}
                         priority
                       />
@@ -746,7 +748,7 @@ export default function Product() {
                       <Image
                         fill
                         src="/images/eyeDropImages/moxflu_LP/moxfluLP-3.jpg"
-                        alt="Moxflu-LP Eyedrops"
+                        alt="Moxflu LP Eye Drops"
                         style={{ objectFit: 'contain' }}
                         priority
                       />
@@ -758,7 +760,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/moxflu_LP/moxfluLP-4.jpg"
-                        alt="Moxflu-LP Eyedrops"
+                        alt="Moxflu LP Eye Drops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -773,10 +775,10 @@ export default function Product() {
 
             {/* Text Section Below Slider */}
             <div className="mt-4 text-left">
-              <p className="text-[#23A6F0] font-bold text-xl mb-2 font-sans">Moxflu-LP Eyedrops</p>
+              <p className="text-[#23A6F0] font-bold text-xl mb-2 font-sans">Moxflu LP Eye Drops</p>
               {/* <p className="text-[#252B42] font-bold text-3xl leading-tight">LOTENATE</p> */}
               <p className="text-black font-normal text-sm leading-relaxed mt-2 font-sans">
-                Moxflu-LP Eye Drop is a prescription medicine used to treat eye infection with inflammation. It kills and stops the growth of bacteria and helps in relieving symptoms such as redness, itching, and swelling.
+                Moxflu LP Eye Drop is a prescription medicine used to treat eye infection with inflammation. It kills and stops the growth of bacteria and helps in relieving symptoms such as redness, itching, and swelling.
               </p>
             </div>
           </div>
@@ -788,7 +790,7 @@ export default function Product() {
         <div className="relative z-10 hidden md:grid grid-cols-1 md:grid-cols-12 items-center pt-5 rounded-bl-[80px] rounded-tr-[80px] min-h-[520px]">
           <div className="md:col-span-6 flex justify-center self-start h-full">
             <div className="w-full max-w-md flex flex-col justify-center h-full">
-              <p className="text-[#23A6F0] font-bold text-2xl mb-4 font-sans">Nepain Eyedrops</p>
+              <p className="text-[#23A6F0] font-bold text-2xl mb-4 font-sans">Nepain Eye Drops</p>
               {/* <p className="text-[#252B42] font-bold text-4xl leading-tight">LOTENATE</p> */}
               <p className="text-black font-normal text-base leading-relaxed font-sans">
                 Nepain Eye Drop Nepafenac eye drops are used to relieve pain and inflammation in the eyes, particularly after cataract surgery. These drops are a non-steroidal anti-inflammatory drug (NSAID) that work by blocking the release of chemical messengers that cause pain and inflammation. They are also used to help prevent swelling in the eye after surgery.
@@ -834,7 +836,7 @@ export default function Product() {
                         <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                           <Image
                             src={`/images/eyeDropImages/nepain/nepain--${i}.JPG`}
-                            alt={`Nepain Eyedrops ${i}`}
+                            alt={`Nepain Eye Drops ${i}`}
                             fill
                             style={{ objectFit: 'contain' }}
                             priority
@@ -890,7 +892,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/nepain/nepain--1.JPG"
-                        alt="Nepain Eyedrops"
+                        alt="Nepain Eye Drops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -903,7 +905,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/nepain/nepain--2.JPG"
-                        alt="Nepain Eyedrops"
+                        alt="Nepain Eye Drops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -916,7 +918,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/nepain/nepain--3.JPG"
-                        alt="Nepain Eyedrops"
+                        alt="Nepain Eye Drops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -929,7 +931,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/nepain/nepain--4.JPG"
-                        alt="Nepain Eyedrops"
+                        alt="Nepain Eye Drops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -944,7 +946,7 @@ export default function Product() {
 
             {/* Text Section Below Slider */}
             <div className="mt-4 text-left">
-              <p className="text-[#23A6F0] font-bold text-xl mb-4">Nepain Eyedrops</p>
+              <p className="text-[#23A6F0] font-bold text-xl mb-4">Nepain Eye Drops</p>
               {/* <p className="text-[#252B42] font-bold text-4xl leading-tight">LOTENATE</p> */}
               <p className="text-black font-normal text-sm leading-relaxed font-sans">
                 Nepain Eye Drop Nepafenac eye drops are used to relieve pain and inflammation in the eyes, particularly after cataract surgery. These drops are a non-steroidal anti-inflammatory drug (NSAID) that work by blocking the release of chemical messengers that cause pain and inflammation. They are also used to help prevent swelling in the eye after surgery.
@@ -986,7 +988,7 @@ export default function Product() {
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
                           src="/images/eyeDropImages/nepain_PF/NepainPF-1.JPG"
-                          alt="Nepain-PF Eyedrops"
+                          alt="Nepain PF Eye Drops"
                           fill
                           style={{ objectFit: 'contain' }}
                           priority
@@ -999,7 +1001,7 @@ export default function Product() {
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
                           src="/images/eyeDropImages/nepain_PF/NepainPF-2.JPG"
-                          alt="Nepain-PF Eyedrops"
+                          alt="Nepain PF Eye Drops"
                           fill
                           style={{ objectFit: 'contain' }}
                           priority
@@ -1012,7 +1014,7 @@ export default function Product() {
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
                           src="/images/eyeDropImages/nepain_PF/NepainPF-3.jpg"
-                          alt="Nepain-PF Eyedrops"
+                          alt="Nepain PF Eye Drops"
                           fill
                           style={{ objectFit: 'contain' }}
                           priority
@@ -1026,7 +1028,7 @@ export default function Product() {
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
                           src="/images/eyeDropImages/nepain_PF/nepainPF-4.jpg"
-                          alt="Nepain-PF Eyedrops"
+                          alt="Nepain PF Eye Drops"
                           fill
                           style={{ objectFit: 'contain' }}
                           priority
@@ -1060,10 +1062,10 @@ export default function Product() {
 
           <div className="md:col-span-6 flex justify-start self-start h-full">
             <div className="w-full max-w-md flex flex-col justify-center h-full">
-              <p className="text-[#23A6F0] font-bold text-2xl mb-4 font-sans">Nepain-PF Eyedrops</p>
+              <p className="text-[#23A6F0] font-bold text-2xl mb-4 font-sans">Nepain PF Eye Drops</p>
               {/* <p className="text-[#252B42] font-bold text-4xl leading-tight">LOTENATE</p> */}
               <p className="text-black font-normal text-base leading-relaxed font-sans">
-                Nepain-PF Eye Drop BAK Free is a pain relieving medicine used to treat pain and inflammation associated with cataract surgery. It blocks and reduces the release of certain chemicals in
+                Nepain PF Eye Drop BAK Free is a pain relieving medicine used to treat pain and inflammation associated with cataract surgery. It blocks and reduces the release of certain chemicals in
                 53%
                 +
                 Θ
@@ -1096,7 +1098,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/nepain_PF/NepainPF-1.JPG"
-                        alt="Nepain-PF Eyedrops"
+                        alt="Nepain PF Eye Drops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -1109,7 +1111,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/nepain_PF/NepainPF-2.JPG"
-                        alt="Nepain-PF Eyedrops"
+                        alt="Nepain PF Eye Drops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -1122,7 +1124,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/nepain_PF/NepainPF-3.jpg"
-                        alt="Nepain-PF Eyedrops"
+                        alt="Nepain PF Eye Drops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -1135,7 +1137,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/nepain_PF/nepainPF-4.jpg"
-                        alt="Nepain-PF Eyedrops"
+                        alt="Nepain PF Eye Drops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -1150,10 +1152,10 @@ export default function Product() {
 
             {/* Text Section Below Slider */}
             <div className="mt-4 text-left">
-              <p className="text-[#23A6F0] font-bold text-xl mb-2">Nepain-PF Eyedrops</p>
+              <p className="text-[#23A6F0] font-bold text-xl mb-2">Nepain PF Eye Drops</p>
               {/* <p className="text-[#252B42] font-bold text-3xl leading-tight">LOTENATE</p> */}
               <p className="text-black font-normal text-sm leading-relaxed mt-2">
-                Nepain-PF Eye Drop BAK Free is a pain relieving medicine used to treat pain and inflammation associated with cataract surgery. It blocks and reduces the release of certain chemicals in
+                Nepain PF Eye Drop BAK Free is a pain relieving medicine used to treat pain and inflammation associated with cataract surgery. It blocks and reduces the release of certain chemicals in
                 53%
                 +
                 Θ
@@ -1171,7 +1173,7 @@ export default function Product() {
         <div className="relative z-10 hidden md:grid grid-cols-1 md:grid-cols-12 items-center pt-5 rounded-bl-[80px] rounded-tr-[80px] min-h-[520px]">
           <div className="md:col-span-6 flex justify-center self-start h-full">
             <div className="w-full max-w-md flex flex-col justify-center h-full">
-              <p className="text-[#23A6F0] font-bold text-2xl mb-4 font-sans">Cellmoist0.5% Eyedrops</p>
+              <p className="text-[#23A6F0] font-bold text-2xl mb-4 font-sans">Cellmoist 0.5% Eye Drops</p>
               {/* <p className="text-[#252B42] font-bold text-4xl leading-tight">LOTENATE</p> */}
               <p className="text-black font-normal text-base leading-relaxed font-sans">
                 Cellmoist 0.5% Eye Drop is an eye lubricant or artificial tears used to relieve dry eyes. This can happen because not enough tears are made to keep the eye lubricated. It helps to soothe the irritation and burning seen in dry eyes by maintaining proper lubrication of the eyes.
@@ -1217,7 +1219,7 @@ export default function Product() {
                         <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                           <Image
                             src={`/images/eyeDropImages/cellmoist_0.5/cellmoist_0.5_${i}.JPG`}
-                            alt={`Cellmoist0.5% Eyedrops ${i}`}
+                            alt={`Cellmoist 0.5% Eye Drops ${i}`}
                             fill
                             style={{ objectFit: 'contain' }}
                             priority
@@ -1273,7 +1275,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/cellmoist_0.5/cellmoist_0.5_1.JPG"
-                        alt="Cellmoist0.5% Eyedrops"
+                        alt="Cellmoist 0.5% Eye Drops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -1286,7 +1288,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/cellmoist_0.5/cellmoist_0.5_2.JPG"
-                        alt="Cellmoist0.5% Eyedrops"
+                        alt="Cellmoist 0.5% Eye Drops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -1299,7 +1301,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/cellmoist_0.5/cellmoist_0.5_3.JPG"
-                        alt="Cellmoist0.5% Eyedrops"
+                        alt="Cellmoist 0.5% Eye Drops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -1312,7 +1314,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/cellmoist_0.5/cellmoist_0.5_4.JPG"
-                        alt="Cellmoist0.5% Eyedrops"
+                        alt="Cellmoist 0.5% Eye Drops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -1327,7 +1329,7 @@ export default function Product() {
 
             {/* Text Section Below Slider */}
             <div className="mt-4 text-left">
-              <p className="text-[#23A6F0] font-bold text-xl mb-4">Cellmoist0.5% Eyedrops</p>
+              <p className="text-[#23A6F0] font-bold text-xl mb-4">Cellmoist 0.5% Eye Drops</p>
               {/* <p className="text-[#252B42] font-bold text-4xl leading-tight">LOTENATE</p> */}
               <p className="text-black font-normal text-sm leading-relaxed font-sans">
                 Cellmoist 0.5% Eye Drop is an eye lubricant or artificial tears used to relieve dry eyes. This can happen because not enough tears are made to keep the eye lubricated. It helps to soothe the irritation and burning seen in dry eyes by maintaining proper lubrication of the eyes.
@@ -1369,7 +1371,7 @@ export default function Product() {
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
                           src="/images/eyeDropImages/cellmoist_0.1/cellmoist_1_1.JPG"
-                          alt="Cellmoist 1% Eyedrops"
+                          alt="Cellmoist 1% Eye Drops"
                           fill
                           style={{ objectFit: 'contain' }}
                           priority
@@ -1382,7 +1384,7 @@ export default function Product() {
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
                           src="/images/eyeDropImages/cellmoist_0.1/cellmoist_1_2.JPG"
-                          alt="Cellmoist 1% Eyedrops"
+                          alt="Cellmoist 1% Eye Drops"
                           fill
                           style={{ objectFit: 'contain' }}
                           priority
@@ -1395,7 +1397,7 @@ export default function Product() {
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
                           src="/images/eyeDropImages/cellmoist_0.1/cellmoist_1_3.JPG"
-                          alt="Cellmoist 1% Eyedrops"
+                          alt="Cellmoist 1% Eye Drops"
                           fill
                           style={{ objectFit: 'contain' }}
                           priority
@@ -1409,7 +1411,7 @@ export default function Product() {
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
                           src="/images/eyeDropImages/cellmoist_0.1/cellmoist_1_4.JPG"
-                          alt="Cellmoist 1% Eyedrops"
+                          alt="Cellmoist 1% Eye Drops"
                           fill
                           style={{ objectFit: 'contain' }}
                           priority
@@ -1443,7 +1445,7 @@ export default function Product() {
 
           <div className="md:col-span-6 flex justify-start self-start h-full">
             <div className="w-full max-w-md flex flex-col justify-center h-full">
-              <p className="text-[#23A6F0] font-bold text-2xl mb-4 font-sans">Cellmoist 1% Eyedrops</p>
+              <p className="text-[#23A6F0] font-bold text-2xl mb-4 font-sans">Cellmoist 1% Eye Drops</p>
               {/* <p className="text-[#252B42] font-bold text-4xl leading-tight">LOTENATE</p> */}
               <p className="text-black font-normal text-base leading-relaxed font-sans">
                 Cellmoist 1% is used as a lubricant to relive irritation and discomfort due to dryness of the eyes or due to exposure of the eyes to wind or sun. Carboxymethylcellulose is a lubricant. It works similar to natural tears and provides temporary relief from burning and discomfort due to dryness of the eye.
@@ -1474,7 +1476,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/cellmoist_0.1/cellmoist_1_1.JPG"
-                        alt="Cellmoist 1% Eyedrops"
+                        alt="Cellmoist 1% Eye Drops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -1487,7 +1489,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/cellmoist_0.1/cellmoist_1_2.JPG"
-                        alt="Cellmoist 1% Eyedrops"
+                        alt="Cellmoist 1% Eye Drops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -1500,7 +1502,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/cellmoist_0.1/cellmoist_1_3.JPG"
-                        alt="Cellmoist 1% Eyedrops"
+                        alt="Cellmoist 1% Eye Drops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -1513,7 +1515,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/cellmoist_0.1/cellmoist_1_4.JPG"
-                        alt="Cellmoist 1% Eyedrops"
+                        alt="Cellmoist 1% Eye Drops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -1528,7 +1530,7 @@ export default function Product() {
 
             {/* Text Section Below Slider */}
             <div className="mt-4 text-left">
-              <p className="text-[#23A6F0] font-bold text-xl mb-2">Cellmoist 1% Eyedrops</p>
+              <p className="text-[#23A6F0] font-bold text-xl mb-2">Cellmoist 1% Eye Drops</p>
               {/* <p className="text-[#252B42] font-bold text-3xl leading-tight">LOTENATE</p> */}
               <p className="text-black font-normal text-sm leading-relaxed mt-2">
                 Cellmoist 1% is used as a lubricant to relive irritation and discomfort due to dryness of the eyes or due to exposure of the eyes to wind or sun. Carboxymethylcellulose is a lubricant. It works similar to natural tears and provides temporary relief from burning and discomfort due to dryness of the eye.
@@ -1544,7 +1546,7 @@ export default function Product() {
         <div className="relative z-10 hidden md:grid grid-cols-1 md:grid-cols-12 items-center pt-5 rounded-bl-[80px] rounded-tr-[80px] min-h-[520px]">
           <div className="md:col-span-6 flex justify-center self-start h-full">
             <div className="w-full max-w-md flex flex-col justify-center h-full">
-              <p className="text-[#23A6F0] font-bold text-2xl mb-4 font-sans">HyalomoistTG Eyedrops</p>
+              <p className="text-[#23A6F0] font-bold text-2xl mb-4 font-sans">Hyalomoist TG Eye Drops</p>
               {/* <p className="text-[#252B42] font-bold text-4xl leading-tight">LOTENATE</p> */}
               <p className="text-black font-normal text-base leading-relaxed font-sans">
                 Hyalomoist TG Eye Drop is a lubricant. It is used in the treatment of dry eyes. It moistens the eyes and provides relief from discomfort and temporary burning. It also helps in treating corneal burns by forming a soothing layer that reduces irritation and protects the damaged cornea.
@@ -1591,7 +1593,7 @@ export default function Product() {
                         <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                           <Image
                             src={`/images/eyeDropImages/hyalomist_tg/hyalomoist_tg_${i}.JPG`}
-                            alt={`HyalomoistTG Eyedrops ${i}`}
+                            alt={`Hyalomoist TG Eye Drops ${i}`}
                             fill
                             style={{ objectFit: 'contain' }}
                             priority
@@ -1647,7 +1649,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/hyalomist_tg/hyalomoist_tg_1.JPG"
-                        alt="HyalomoistTG Eyedrops"
+                        alt="Hyalomoist TG Eye Drops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -1660,7 +1662,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/hyalomist_tg/hyalomoist_tg_2.JPG"
-                        alt="HyalomoistTG Eyedrops"
+                        alt="Hyalomoist TG Eye Drops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -1673,7 +1675,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/hyalomist_tg/hyalomoist_tg_3.JPG"
-                        alt="HyalomoistTG Eyedrops"
+                        alt="Hyalomoist TG Eye Drops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -1686,7 +1688,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/hyalomist_tg/hyalomoist_tg_4.JPG"
-                        alt="HyalomoistTG Eyedrops"
+                        alt="Hyalomoist TG Eye Drops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -1701,7 +1703,7 @@ export default function Product() {
 
             {/* Text Section Below Slider */}
             <div className="mt-4 text-left">
-              <p className="text-[#23A6F0] font-bold text-xl mb-4">HyalomoistTG Eyedrops</p>
+              <p className="text-[#23A6F0] font-bold text-xl mb-4">Hyalomoist TG Eye Drops</p>
               {/* <p className="text-[#252B42] font-bold text-4xl leading-tight">LOTENATE</p> */}
               <p className="text-black font-normal text-sm leading-relaxed font-sans">
                 Hyalomoist TG Eye Drop is a lubricant. It is used in the treatment of dry eyes. It moistens the eyes and provides relief from discomfort and temporary burning. It also helps in treating corneal burns by forming a soothing layer that reduces irritation and protects the damaged cornea.
@@ -1744,7 +1746,7 @@ export default function Product() {
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
                           src="/images/eyeDropImages/lotenate/Lotenate-1.JPG"
-                          alt="Lotenate0.5% Eyedrops"
+                          alt="Lotenate 0.5% Eye Drops"
                           fill
                           style={{ objectFit: 'contain' }}
                           priority
@@ -1757,7 +1759,7 @@ export default function Product() {
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
                           src="/images/eyeDropImages/lotenate/Lotenate-2.JPG"
-                          alt="Lotenate0.5% Eyedrops"
+                          alt="Lotenate 0.5% Eye Drops"
                           fill
                           style={{ objectFit: 'contain' }}
                           priority
@@ -1770,7 +1772,7 @@ export default function Product() {
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
                           src="/images/eyeDropImages/lotenate/Lotenate-3.JPG"
-                          alt="Lotenate0.5% Eyedrops"
+                          alt="Lotenate 0.5% Eye Drops"
                           fill
                           style={{ objectFit: 'contain' }}
                           priority
@@ -1784,7 +1786,7 @@ export default function Product() {
                       <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                         <Image
                           src="/images/eyeDropImages/lotenate/Lotenate-4.JPG"
-                          alt="Lotenate0.5% Eyedrops"
+                          alt="Lotenate 0.5% Eye Drops"
                           fill
                           style={{ objectFit: 'contain' }}
                           priority
@@ -1818,7 +1820,7 @@ export default function Product() {
 
           <div className="md:col-span-6 flex justify-start self-start h-full">
             <div className="w-full max-w-md flex flex-col justify-center h-full">
-              <p className="text-[#23A6F0] font-bold text-2xl mb-4 font-sans">Lotenate0.5% Eyedrops</p>
+              <p className="text-[#23A6F0] font-bold text-2xl mb-4 font-sans">Lotenate 0.5% Eye Drops</p>
               {/* <p className="text-[#252B42] font-bold text-4xl leading-tight">LOTENATE</p> */}
               <p className="text-black font-normal text-base leading-relaxed font-sans">
                 Lotenate 0.5% Eye Drop helps relieve symptoms such as pain, redness, swelling, itching and watering of eyes due to an infection or allergy. This medicine works by decreasing the production of certain chemicals that cause inflammation of the eyes.
@@ -1849,7 +1851,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/lotenate/Lotenate-1.JPG"
-                        alt="Lotenate0.5% Eyedrops"
+                        alt="Lotenate 0.5% Eye Drops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -1862,7 +1864,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/lotenate/Lotenate-2.JPG"
-                        alt="Lotenate0.5% Eyedrops"
+                        alt="Lotenate 0.5% Eye Drops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -1875,7 +1877,7 @@ export default function Product() {
                     <div className="relative w-full max-w-[400px]" style={{ paddingTop: '75%' }}>
                       <Image
                         src="/images/eyeDropImages/lotenate/Lotenate-3.JPG"
-                        alt="Lotenate0.5% Eyedrops"
+                        alt="Lotenate 0.5% Eye Drops"
                         fill
                         style={{ objectFit: 'contain' }}
                         priority
@@ -1903,7 +1905,7 @@ export default function Product() {
 
             {/* Text Section Below Slider */}
             <div className="mt-4 text-left">
-              <p className="text-[#23A6F0] font-bold text-xl mb-2">Lotenate0.5% Eyedrops</p>
+              <p className="text-[#23A6F0] font-bold text-xl mb-2">Lotenate 0.5% Eye Drops</p>
               {/* <p className="text-[#252B42] font-bold text-3xl leading-tight">LOTENATE</p> */}
               <p className="text-black font-normal text-sm leading-relaxed mt-2">
                 Lotenate 0.5% Eye Drop helps relieve symptoms such as pain, redness, swelling, itching and watering of eyes due to an infection or allergy. This medicine works by decreasing the production of certain chemicals that cause inflammation of the eyes.
@@ -1915,7 +1917,7 @@ export default function Product() {
 
 
        <footer className="bg-[#23A6F0] text-white py-6 text-center">
-          <h2 className="text-lg font-semibold mb-2">SRI SMS PHARMA</h2>
+          <h2 className="text-lg font-semibold mb-2">Sri Sms Pharma</h2>
           <nav className="space-x-6">
             <Link href="/" >Home</Link>
             <Link href="/product">Products</Link>

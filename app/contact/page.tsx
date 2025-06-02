@@ -21,7 +21,7 @@ export default function Contact() {
           </div>
           <Image
             src="/images/logo.png"
-            alt="SRI SMS Pharma Logo"
+            alt="Sri Sms Pharma Logo"
             width={200}
             height={50}
             className="object-contain w-[200px] h-auto pl-4"
@@ -36,7 +36,7 @@ export default function Contact() {
         <nav className="md:hidden relative z-20 bg-white px-6 py-4 flex items-center justify-between">
           <Image
             src="/images/logo.png"
-            alt="SRI SMS Pharma Logo"
+            alt="Sri Sms Pharma Logo"
             width={200}
             height={50}
             className="object-contain w-[200px] h-auto "
@@ -152,7 +152,7 @@ export default function Contact() {
 
         {/* Footer */}
          <footer className="bg-[#23A6F0] text-white py-6 text-center">
-          <h2 className="text-lg font-semibold mb-2">SRI SMS PHARMA</h2>
+          <h2 className="text-lg font-semibold mb-2">Sri Sms Pharma</h2>
           <nav className="space-x-6">
             <Link href="/" >Home</Link>
             <Link href="/product">Products</Link>

@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SRI SMS Pharma",
+  title: "Sri Sms Pharma",
   description: "Ophthalmic pharma wholesaler in South India",
 };
 

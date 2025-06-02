@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>SRI SMS Pharma - Welcome</title>
+        <title>Sri Sms Pharma - Welcome</title>
         <meta
           name="description"
           content="Ophthalmic pharma wholesaler in South India"
@@ -40,7 +40,7 @@ export default function Home() {
         <nav className="hidden md:flex relative z-0 items-center px-10 py-6 bg-white">
           <Image
             src="/images/logo.png"
-            alt="SRI SMS Pharma Logo"
+            alt="Sri Sms Pharma Logo"
             width={200}
             height={50}
             className="object-contain w-[200px] h-auto "
@@ -56,7 +56,7 @@ export default function Home() {
         <nav className="md:hidden relative z-20 bg-white px-6 py-4 flex items-center justify-between">
          <Image
             src="/images/logo.png"
-            alt="SRI SMS Pharma Logo"
+            alt="Sri Sms Pharma Logo"
             width={200}
             height={50}
             className="object-contain w-[200px] h-auto"
@@ -103,11 +103,11 @@ export default function Home() {
           <div className="md:col-span-7 flex justify-start sm:pl-20 h-full">
             <div className="w-full max-w-md flex flex-col justify-center h-full">
               <p className="text-[#23A6F0] font-bold text-xl sm:text-2xl mb-2 sm:mb-4">Welcome</p>
-              <p className="text-[#252B42] font-bold text-5xl leading-tight hidden sm:block">SRI SMS</p>
+              <p className="text-[#252B42] font-bold text-5xl leading-tight hidden sm:block">Sri Sms</p>
               <p className="text-[#252B42] font-bold text-5xl leading-tight mb-6 hidden sm:block">Pharma</p>
-              <p className="text-[#252B42] font-bold text-xl leading-tight mb-3 sm:hidden">SRI SMS Pharma</p>
+              <p className="text-[#252B42] font-bold text-xl leading-tight mb-3 sm:hidden">Sri Sms Pharma</p>
               <p className="text-black font-normal text-sm sm:text-base leading-relaxed font-sans">
-                We, SRI SMS PHARMA – pharma wholesaler being in the industry for the past 5 years.
+                We, Sri Sms Pharma – pharma wholesaler being in the industry for the past 5 years.
                 We deal with ophthalmic range of products distribution all over Tamil Nadu.
                 Happy to share you that, now we have become an Authorized super stockiest for Eye reach meds company which is coming under the banner of “THE EYE FOUDATION – COIMBATORE “
                 Now in southern region of India we look forward district wise distributor, to reach out Eye foundation medicine to Everywhere for their patient’s repeat purchase .
@@ -225,7 +225,7 @@ export default function Home() {
         </div>
 
          <footer className="bg-[#23A6F0] text-white py-6 text-center">
-          <h2 className="text-lg font-semibold mb-2">SRI SMS PHARMA</h2>
+          <h2 className="text-lg font-semibold mb-2">Sri Sms Pharma</h2>
           <nav className="space-x-6">
             <Link href="/" >Home</Link>
             <Link href="/product">Products</Link>
