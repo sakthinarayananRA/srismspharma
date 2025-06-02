@@ -179,7 +179,7 @@ export default function Home() {
                 standards.
               </p>
               <Link
-                href="/products"
+                href="/product"
                 className="bg-[#23A6F0]  text-white font-semibold py-3 my-4 md:my-0 rounded-md px-5 w-full md:w-48 hover:bg-[#1a8ed8] transition-all duration-300 inline-block text-center"
               >
                 View Products
