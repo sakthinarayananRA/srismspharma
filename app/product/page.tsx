@@ -15,10 +15,6 @@ export default function Product() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <Head>
-        <title>Sri Sms Pharma - Welcome</title>
-        <meta name="description" content="Ophthalmic pharma wholesaler in South India" />
-      </Head>
 
       <div className="relative min-h-screen bg-white max-w-[1360px] mx-auto font-sans">
        <div className="hidden sm:flex justify-start absolute left-0 top-0 z-10">
