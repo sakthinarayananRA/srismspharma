@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Sri Sms Pharma",
+  title: "Contact Us | Sri SMS Pharma - Get in Touch for Pharmaceutical Solutions",
   description: "Reach out to Sri Sms Pharma for your ophthalmic product inquiries and support.",
   alternates: {
     canonical: "https://www.srismspharma.com/contact",
