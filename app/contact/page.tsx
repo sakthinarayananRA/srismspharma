@@ -19,13 +19,15 @@ export default function Contact() {
               className="h-20 w-10"
             />
           </div>
-          <Image
-            src="/images/logo.png"
-            alt="Sri Sms Pharma Logo"
-            width={200}
-            height={50}
-            className="object-contain w-[200px] h-auto pl-4"
-          />
+          <Link href={"/"}>
+            <Image
+              src="/images/logo.png"
+              alt="Sri Sms Pharma Logo"
+              width={200}
+              height={50}
+              className="object-contain w-[200px] h-auto "
+            />
+          </Link>
           <div className="space-x-8 pl-20">
             <Link href="/" className="text-gray-600 hover:text-[#23A6F0] font-semibold">Home</Link>
             <Link href="/product" className="text-gray-600 hover:text-[#23A6F0] font-semibold">Product</Link>
@@ -34,13 +36,15 @@ export default function Contact() {
         </nav>
 
         <nav className="md:hidden relative z-20 bg-white px-6 py-4 flex items-center justify-between">
-          <Image
-            src="/images/logo.png"
-            alt="Sri Sms Pharma Logo"
-            width={200}
-            height={50}
-            className="object-contain w-[200px] h-auto "
-          />
+          <Link href={"/"}>
+            <Image
+              src="/images/logo.png"
+              alt="Sri Sms Pharma Logo"
+              width={200}
+              height={50}
+              className="object-contain w-[200px] h-auto "
+            />
+          </Link>
 
           {/* Hamburger Button */}
           <button onClick={() => setIsOpen(true)} className="focus:outline-none">

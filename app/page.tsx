@@ -1,5 +1,5 @@
 "use client";
-import Head from "next/head";
+// import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -30,13 +30,15 @@ export default function Home() {
 
         {/* Desktop Navbar */}
         <nav className="hidden md:flex relative z-0 items-center px-10 py-6 bg-white">
-          <Image
-            src="/images/logo.png"
-            alt="Sri Sms Pharma Logo"
-            width={200}
-            height={50}
-            className="object-contain w-[200px] h-auto "
-          />
+          <Link href={"/"}>
+            <Image
+              src="/images/logo.png"
+              alt="Sri Sms Pharma Logo"
+              width={200}
+              height={50}
+              className="object-contain w-[200px] h-auto "
+            />
+          </Link>
 
           <div className="space-x-8 pl-20">
             <Link href="/" className="text-[#23A6F0] font-semibold">Home</Link>
@@ -46,13 +48,15 @@ export default function Home() {
         </nav>
 
         <nav className="md:hidden relative z-20 bg-white px-6 py-4 flex items-center justify-between">
-         <Image
-            src="/images/logo.png"
-            alt="Sri Sms Pharma Logo"
-            width={200}
-            height={50}
-            className="object-contain w-[200px] h-auto"
-          />
+          <Link href={"/"}> 
+            <Image
+              src="/images/logo.png"
+              alt="Sri Sms Pharma Logo"
+              width={200}
+              height={50}
+              className="object-contain w-[200px] h-auto"
+            />
+          </Link>
 
 
           {/* Hamburger Button */}
